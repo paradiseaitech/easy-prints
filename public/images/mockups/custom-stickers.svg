@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="sticker-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="100%" stop-color="#FFB088" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="250" fill="#f4f4f6" rx="16" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Sticker 1: Badge Style -->
+  <g transform="translate(110, 110)">
+    <!-- White border offset for vinyl sticker look -->
+    <path d="M 0,-30 L 26,-15 L 26,15 L 0,30 L -26,15 L -26,-15 Z" fill="#ffffff" filter="drop-shadow(2px 4px 6px rgba(0,0,0,0.15))" />
+    <path d="M 0,-26 L 22,-13 L 22,13 L 0,26 L -22,13 L -22,-13 Z" fill="url(#sticker-grad)" />
+    <text x="0" y="4" font-family="system-ui, sans-serif" font-size="8" font-weight="900" fill="#ffffff" text-anchor="middle">BEST</text>
+  </g>
+  
+  <!-- Sticker 2: Round Logo Style -->
+  <g transform="translate(200, 120)">
+    <circle cx="0" cy="0" r="38" fill="#ffffff" filter="drop-shadow(2px 4px 6px rgba(0,0,0,0.15))" />
+    <circle cx="0" cy="0" r="34" fill="#1A1A2E" />
+    <path d="M -20,-10 L 20,-10 L 10,20 L -10,20 Z" fill="#FF6B35" />
+    <text x="0" y="-15" font-family="system-ui, sans-serif" font-size="7" font-weight="800" fill="#ffffff" text-anchor="middle">EASY PRINTS</text>
+    <text x="0" y="2" font-family="system-ui, sans-serif" font-size="5" fill="#ffffff" text-anchor="middle">CREATIVE</text>
+  </g>
+  
+  <!-- Sticker 3: Star Badge -->
+  <g transform="translate(290, 100)">
+    <path d="M 0,-32 L 8,-10 L 30,-10 L 12,4 L 18,26 L 0,12 L -18,26 L -12,4 L -30,-10 L -8,-10 Z" fill="#ffffff" filter="drop-shadow(2px 4px 6px rgba(0,0,0,0.15))" />
+    <path d="M 0,-27 L 7,-8 L 26,-8 L 10,3 L 15,22 L 0,10 L -15,22 L -10,3 L -26,-8 L -7,-8 Z" fill="#FF6B35" />
+  </g>
+  
+  <text x="200" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Custom Die-Cut Stickers</text>
+  <text x="200" y="52" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#777" text-anchor="middle">Waterproof, Scratch-Resistant Vinyl Stickers</text>
+</svg>

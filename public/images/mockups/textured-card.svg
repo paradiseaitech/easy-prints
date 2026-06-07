@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="textured-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7" />
+      <stop offset="100%" stop-color="#f4efe6" />
+    </linearGradient>
+    <pattern id="texture-pattern" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 0 10 L 10 0 M 0 0 L 10 10" stroke="#d5cdbe" stroke-width="0.5" opacity="0.4" />
+    </pattern>
+  </defs>
+  
+  <rect width="400" height="250" fill="url(#textured-bg)" rx="16" stroke="#cbbfa9" stroke-width="1.5" />
+  <rect width="400" height="250" fill="url(#texture-pattern)" rx="16" />
+  
+  <!-- Classic Golden Logo/Branding -->
+  <path d="M 200 40 L 220 70 L 180 70 Z" fill="#bfa15f" />
+  <circle cx="200" cy="85" r="5" fill="#bfa15f" />
+  
+  <text x="200" y="125" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#4a3e2b" text-anchor="middle" letter-spacing="2">EASY PRINTS</text>
+  <text x="200" y="145" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#bfa15f" text-anchor="middle" letter-spacing="3">TEXTURED ART COTTON</text>
+  
+  <text x="200" y="190" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#5c4e38" text-anchor="middle">Luxury Paper Stock</text>
+  <line x1="150" y1="205" x2="250" y2="205" stroke="#bfa15f" stroke-width="1" opacity="0.5" />
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#f4f4f6" rx="16" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Hanging Header Card with Bag Mockup -->
+  <g transform="translate(140, 70)">
+    <!-- Transparent Bag -->
+    <rect x="15" y="30" width="90" height="110" fill="#ffffff" fill-opacity="0.5" stroke="#cccccc" stroke-dasharray="3,3" rx="4" />
+    <!-- Header Card -->
+    <rect x="10" y="0" width="100" height="35" fill="#1A1A2E" rx="3" />
+    <!-- Sombrero Hole -->
+    <ellipse cx="60" cy="8" rx="8" ry="4" fill="#f4f4f6" />
+    
+    <!-- Header Text -->
+    <text x="60" y="24" font-family="system-ui, sans-serif" font-size="7" font-weight="700" fill="#FF6B35" text-anchor="middle">PREMIUM PACK</text>
+    
+    <!-- Items inside bag -->
+    <circle cx="45" cy="70" r="12" fill="#FF8F65" opacity="0.8" />
+    <circle cx="75" cy="80" r="15" fill="#FF6B35" opacity="0.8" />
+    <circle cx="55" cy="100" r="10" fill="#1A1A2E" opacity="0.8" />
+  </g>
+  
+  <text x="200" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Product Packaging</text>
+  <text x="200" y="52" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#777" text-anchor="middle">Header Cards, Hang Tags &amp; Inserts</text>
+</svg>

@@ -1,0 +1,306 @@
+[
+  {
+    "id": "visiting-card-printing",
+    "name": "Visiting Cards",
+    "slug": "visiting-card-printing",
+    "category": "Stationery",
+    "description": "Premium business cards with spot UV, foiling, and matte finish options. Choose from a wide range of paper stocks and finishes.",
+    "priceStarting": 199,
+    "image": "/images/Matt_Visiting_card.jpeg",
+    "keywords": "visiting card printing, business card printing, premium visiting cards",
+    "features": ["Premium paper quality", "Spot UV & foiling options", "Matte & glossy finish", "Bulk discounts available"],
+    "available": true,
+    "variations": [
+      {
+        "id": "matte-visiting-card",
+        "name": "Matte Visiting Card",
+        "slug": "matte-visiting-card",
+        "description": "Elegant non-reflective finish with a smooth, premium feel. Best for clean, professional layouts.",
+        "priceStarting": 199,
+        "image": "/images/Matt_Visiting_card.jpeg",
+        "keywords": "matte visiting card, professional business card, matte finish prints",
+        "features": ["350 GSM Art Card", "Smooth anti-glare finish", "Double-sided options", "Perfect for executive branding"]
+      },
+      {
+        "id": "glossy-visiting-card",
+        "name": "Glossy Visiting Card",
+        "slug": "glossy-visiting-card",
+        "description": "Vibrant and shiny finish that makes colors pop. Ideal for photography, media, and design businesses.",
+        "priceStarting": 249,
+        "image": "/images/mockups/glossy-card.svg",
+        "keywords": "glossy visiting card, shiny business card, vibrant card printing",
+        "features": ["350 GSM Premium Art Card", "High-gloss UV protective coating", "Water-resistant surface", "Rich color depth"]
+      },
+      {
+        "id": "textured-visiting-card",
+        "name": "Textured Visiting Card",
+        "slug": "textured-visiting-card",
+        "description": "Tactile premium papers with unique patterns. Feels organic, luxury, and outstanding in hand.",
+        "priceStarting": 399,
+        "image": "/images/mockups/textured-card.svg",
+        "keywords": "textured visiting card, luxury business card, premium paper cards",
+        "features": ["Imported textured papers", "Elegant touch and feel", "Classic retro & modern textures", "Sophisticated minimalist styling"]
+      },
+      {
+        "id": "spot-uv-visiting-card",
+        "name": "Spot UV & Gold Foil Card",
+        "slug": "spot-uv-visiting-card",
+        "description": "Glossy selective raised varnish or metallic gold foil accents on premium cards. Creates a memorable luxury texture.",
+        "priceStarting": 499,
+        "image": "/images/Gold_foil_Die_cut_visiting_cards.jpeg",
+        "keywords": "spot uv visiting card, raised varnish business card, gold foil visiting card, luxury spot uv prints",
+        "features": ["Metallic gold foil highlight", "Spot gloss details", "Velvet matte background", "Premium tactile effect"]
+      },
+      {
+        "id": "transparent-visiting-card",
+        "name": "Transparent Visiting Card",
+        "slug": "transparent-visiting-card",
+        "description": "Frosted or clear plastic cards that are waterproof, tearproof, and unforgettable.",
+        "priceStarting": 699,
+        "image": "/images/mockups/transparent-card.svg",
+        "keywords": "transparent visiting card, plastic business card, clear cards Purnia",
+        "features": ["Frosted transparent PVC", "Rounded corners by default", "Tear & water resistant", "Ultra-modern futuristic design"]
+      }
+    ]
+  },
+  {
+    "id": "custom-tshirt-printing",
+    "name": "T-Shirt Printing",
+    "slug": "custom-tshirt-printing",
+    "category": "Apparel",
+    "description": "Custom t-shirt printing with DTF, screen printing, and sublimation. Perfect for events, promotions, and merchandise.",
+    "priceStarting": 299,
+    "image": "/images/placeholder-tshirt.svg",
+    "keywords": "t-shirt printing, custom tshirt printing, apparel printing",
+    "features": ["DTF & screen printing", "Sublimation available", "Bulk orders welcome", "Free design assistance"],
+    "available": true
+  },
+  {
+    "id": "banner-printing",
+    "name": "Banner Printing",
+    "slug": "banner-printing",
+    "category": "Signage",
+    "description": "Large format banner printing for events, promotions, advertising, and branding. High-resolution output with vibrant colors.",
+    "priceStarting": 99,
+    "image": "/images/placeholder-banner.svg",
+    "keywords": "banner printing, flex banner printing, large format printing",
+    "features": ["High resolution printing", "Weather resistant", "Multiple sizes available", "Fast turnaround"],
+    "available": true
+  },
+  {
+    "id": "flex-printing",
+    "name": "Flex Printing",
+    "slug": "flex-printing",
+    "category": "Signage",
+    "description": "High-resolution flex printing for hoardings, banners, and outdoor displays. Durable and vibrant.",
+    "priceStarting": 79,
+    "image": "/images/placeholder-flex.svg",
+    "keywords": "flex printing, flex banner printing, vinyl printing",
+    "features": ["Outdoor durable", "UV resistant inks", "Custom sizes", "Bulk rates available"],
+    "available": true
+  },
+  {
+    "id": "brochure-printing",
+    "name": "Brochure Printing",
+    "slug": "brochure-printing",
+    "category": "Stationery",
+    "description": "Tri-fold, bi-fold, and multi-page brochure printing with glossy or matte finish. Perfect for marketing collateral.",
+    "priceStarting": 249,
+    "image": "/images/Brochure.jpeg",
+    "keywords": "brochure printing, brochure printing online, catalogue printing",
+    "features": ["Multiple folding options", "Premium paper stock", "Glossy & matte finish", "Design service included"],
+    "available": true
+  },
+  {
+    "id": "flyer-printing",
+    "name": "Flyer Printing",
+    "slug": "flyer-printing",
+    "category": "Stationery",
+    "description": "Eye-catching flyer and leaflet printing for promotions, events, and business marketing.",
+    "priceStarting": 149,
+    "image": "/images/Flyers.jpeg",
+    "keywords": "flyer printing, leaflet printing, pamphlet printing",
+    "features": ["Vibrant color printing", "Various paper options", "Quick delivery", "Bulk pricing"],
+    "available": true
+  },
+  {
+    "id": "sticker-printing",
+    "name": "Sticker Printing",
+    "slug": "sticker-printing",
+    "category": "Packaging",
+    "description": "Custom sticker printing in various shapes, sizes, and materials. Great for branding, labels, and promotions.",
+    "priceStarting": 49,
+    "image": "/images/placeholder-sticker.svg",
+    "keywords": "sticker printing, custom sticker printing, label printing",
+    "features": ["Custom shapes available", "Waterproof options", "Vinyl & paper stickers", "Small or bulk orders"],
+    "available": true
+  },
+  {
+    "id": "mug-printing",
+    "name": "Mug Printing",
+    "slug": "mug-printing",
+    "category": "Gifts",
+    "description": "Personalized photo mug printing. Great for gifts, promotions, and corporate giveaways.",
+    "priceStarting": 199,
+    "image": "/images/placeholder-mug.svg",
+    "keywords": "mug printing, custom mug printing, photo mug printing",
+    "features": ["Full color printing", "Dishwasher safe", "Bulk discounts", "Design template available"],
+    "available": true
+  },
+  {
+    "id": "wedding-card-printing",
+    "name": "Wedding Cards",
+    "slug": "wedding-card-printing",
+    "category": "Wedding",
+    "description": "Elegant wedding card printing with foil stamping, embossing, and premium paper options.",
+    "priceStarting": 25,
+    "image": "/images/placeholder-wedding.svg",
+    "keywords": "wedding card printing, wedding invitation printing, card printing",
+    "features": ["Foil stamping available", "Embossing options", "Premium paper", "Design assistance included"],
+    "available": true
+  },
+  {
+    "id": "corporate-gifts",
+    "name": "Corporate Gifts",
+    "slug": "corporate-gifts",
+    "category": "Gifts",
+    "description": "Custom corporate gifts for branding, events, and employee recognition. Premium quality with your logo.",
+    "priceStarting": 99,
+    "image": "/images/placeholder-gift.svg",
+    "keywords": "corporate gifts, corporate gifting, branded merchandise",
+    "features": ["Custom branding", "Wide product range", "Bulk orders welcome", "Gift packaging included"],
+    "available": true
+  },
+  {
+    "id": "packaging-printing",
+    "name": "Packaging Printing",
+    "slug": "packaging-printing",
+    "category": "Packaging",
+    "description": "Custom packaging boxes, cartons, and product packaging solutions for your business.",
+    "priceStarting": 15,
+    "image": "/images/Packaging.jpeg",
+    "keywords": "packaging printing, custom packaging boxes, product packaging",
+    "features": ["Custom sizes", "Eco-friendly options", "Brand printing", "Bulk pricing"],
+    "available": true,
+    "variations": [
+      {
+        "id": "label-printing",
+        "name": "Label Printing",
+        "slug": "label-printing",
+        "description": "Custom printed roll or sheet labels for bottles, jars, bags, and industrial products.",
+        "priceStarting": 2,
+        "image": "/images/Labels.jpeg",
+        "keywords": "label printing, custom labels, product labels",
+        "features": ["Waterproof vinyl or paper", "Roll and sheet formats", "Custom die-cut shapes", "Strong adhesive back"]
+      },
+      {
+        "id": "box-packaging",
+        "name": "Box Packaging",
+        "slug": "box-packaging",
+        "description": "Premium mono-cartons, corrugated boxes, and gift box structures printed with your brand logo.",
+        "priceStarting": 15,
+        "image": "/images/Packaging( cookie box ).jpeg",
+        "keywords": "box packaging, custom boxes, brand cartons",
+        "features": ["Duplex & Kraft boards", "Vibrant offset printing", "Sturdy structural strength", "Matte & glossy lamination options"]
+      },
+      {
+        "id": "product-packaging",
+        "name": "Product Packaging",
+        "slug": "product-packaging",
+        "description": "Comprehensive retail packaging solutions including header cards, hang tags, and inserts.",
+        "priceStarting": 5,
+        "image": "/images/mockups/product-packaging.svg",
+        "keywords": "product packaging, retail packaging, custom tags",
+        "features": ["Premium cardboard stocks", "Custom dimensions", "Punch hole options", "High definition detailing"]
+      },
+      {
+        "id": "food-packaging",
+        "name": "Food Packaging",
+        "slug": "food-packaging",
+        "description": "Food-grade, eco-friendly boxes, containers, and wrapping options that keep food fresh and safe.",
+        "priceStarting": 8,
+        "image": "/images/Packaging (Cake&Pastry boxes).jpeg",
+        "keywords": "food packaging, eco-friendly food boxes, food grade print",
+        "features": ["100% food-grade material", "Oil & grease resistant lining", "Microwave friendly options", "Biodegradable materials"]
+      },
+      {
+        "id": "shipping-labels",
+        "name": "Shipping Labels",
+        "slug": "shipping-labels",
+        "description": "Pre-cut thermal and self-adhesive labels for packages and courier boxes.",
+        "priceStarting": 1,
+        "image": "/images/mockups/shipping-labels.svg",
+        "keywords": "shipping labels, address labels, courier labels",
+        "features": ["Standard shipping sizes", "Excellent print legibility", "Smudge-proof thermal coating", "Permanent high-tack glue"]
+      },
+      {
+        "id": "barcode-labels",
+        "name": "Barcode Labels",
+        "slug": "barcode-labels",
+        "description": "High-density barcode stickers on rolls or sheets for inventory and retail scan systems.",
+        "priceStarting": 0.5,
+        "image": "/images/mockups/barcode-labels.svg",
+        "keywords": "barcode labels, barcode stickers, serial stickers",
+        "features": ["Precise crisp line prints", "Scratch-resistant inks", "Compatible with all scanners", "Sequentially numbered available"]
+      },
+      {
+        "id": "custom-stickers",
+        "name": "Custom Stickers",
+        "slug": "custom-stickers",
+        "description": "Die-cut individual stickers for branding, laptop decorations, or promotional hand-outs.",
+        "priceStarting": 3,
+        "image": "/images/mockups/custom-stickers.svg",
+        "keywords": "custom stickers, die cut stickers, branding stickers",
+        "features": ["Premium thick vinyl", "UV protective overlay", "No sticky residue on peel", "Vibrant fade-resistant colors"]
+      }
+    ]
+  },
+  {
+    "id": "photo-frames",
+    "name": "Photo Frames",
+    "slug": "photo-frames",
+    "category": "Gifts",
+    "description": "Premium custom photo frame printing in wood, acrylic, and metal finishes.",
+    "priceStarting": 399,
+    "image": "/images/placeholder-frame.svg",
+    "keywords": "photo frames, custom photo frame, photo frame printing",
+    "features": ["Wood, acrylic & metal", "Custom sizes", "Matting options", "Wall mounting included"],
+    "available": true
+  },
+  {
+    "id": "id-card-printing",
+    "name": "ID Cards",
+    "slug": "id-card-printing",
+    "category": "Stationery",
+    "description": "PVC and teslin ID card printing with lanyards, badges, and accessories.",
+    "priceStarting": 49,
+    "image": "/images/placeholder-idcard.svg",
+    "keywords": "id card printing, custom id cards, identity card printing",
+    "features": ["PVC & Teslin cards", "Lanyards included", "Photo quality print", "Bulk discounts"],
+    "available": true
+  },
+  {
+    "id": "poster-printing",
+    "name": "Poster Printing",
+    "slug": "poster-printing",
+    "category": "Signage",
+    "description": "High-quality poster printing for events, rooms, advertising, and decor.",
+    "priceStarting": 199,
+    "image": "/images/placeholder-poster.svg",
+    "keywords": "poster printing, custom poster printing, poster print",
+    "features": ["High resolution", "Multiple sizes", "Premium paper", "Matte & glossy finish"],
+    "available": true
+  },
+  {
+    "id": "standee-printing",
+    "name": "Standee Printing",
+    "slug": "standee-printing",
+    "category": "Signage",
+    "description": "Roll-up standees, X-standees, and custom display stands for events and promotions.",
+    "priceStarting": 599,
+    "image": "/images/placeholder-standee.svg",
+    "keywords": "standee printing, roll up standee, display stand printing",
+    "features": ["Roll-up & X-standee", "Durable material", "Easy setup", "Custom graphics"],
+    "available": true
+  }
+]

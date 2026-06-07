@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="spot-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141419" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="gloss-highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#1A1A2E" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="250" fill="url(#spot-bg)" rx="16" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1.5" />
+  
+  <!-- Matte subtle shapes -->
+  <path d="M-50,150 Q100,50 250,250 Z" fill="#202025" opacity="0.4" />
+  
+  <!-- SPOT UV glossy high contrast element -->
+  <path d="M220,-20 Q320,120 420,50 L420,270 L150,270 Z" fill="#1e1e24" stroke="#ffffff" stroke-opacity="0.1" />
+  <circle cx="320" cy="120" r="70" fill="url(#gloss-highlight)" opacity="0.12" filter="blur(5px)" />
+  
+  <!-- Logo/Text with simulated Spot UV gloss overlay -->
+  <text x="40" y="80" font-family="system-ui, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" letter-spacing="1">EASY PRINTS</text>
+  <text x="40" y="105" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#FF6B35" letter-spacing="2">SPOT UV / EMBOSSED</text>
+  
+  <text x="40" y="180" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Robert Chen</text>
+  <text x="40" y="198" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#777785">Production Manager</text>
+  
+  <!-- Gloss indicator -->
+  <rect x="300" y="190" width="60" height="22" rx="11" fill="#FF6B35" />
+  <text x="330" y="204" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">SPOT UV</text>
+</svg>

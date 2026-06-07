@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#f4f4f6" rx="16" stroke="#e0e0e0" stroke-width="1" />
+  
+  <g transform="translate(80, 70)">
+    <!-- Row of 3 Barcode stickers -->
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="70" height="90" fill="#ffffff" rx="3" stroke="#cccccc" />
+    <rect x="8" y="10" width="3" height="40" fill="#000" />
+    <rect x="14" y="10" width="1" height="40" fill="#000" />
+    <rect x="17" y="10" width="4" height="40" fill="#000" />
+    <rect x="24" y="10" width="2" height="40" fill="#000" />
+    <rect x="29" y="10" width="5" height="40" fill="#000" />
+    <rect x="37" y="10" width="1" height="40" fill="#000" />
+    <rect x="40" y="10" width="3" height="40" fill="#000" />
+    <rect x="46" y="10" width="2" height="40" fill="#000" />
+    <rect x="51" y="10" width="4" height="40" fill="#000" />
+    <rect x="58" y="10" width="2" height="40" fill="#000" />
+    <text x="35" y="65" font-family="monospace" font-size="7" text-anchor="middle">ABC-001</text>
+    <text x="35" y="80" font-family="system-ui, sans-serif" font-size="6" font-weight="700" fill="#FF6B35" text-anchor="middle">EASY PRINTS</text>
+    
+    <!-- Card 2 -->
+    <rect x="85" y="0" width="70" height="90" fill="#ffffff" rx="3" stroke="#cccccc" />
+    <rect x="93" y="10" width="2" height="40" fill="#000" />
+    <rect x="98" y="10" width="3" height="40" fill="#000" />
+    <rect x="104" y="10" width="1" height="40" fill="#000" />
+    <rect x="108" y="10" width="4" height="40" fill="#000" />
+    <rect x="115" y="10" width="2" height="40" fill="#000" />
+    <rect x="120" y="10" width="5" height="40" fill="#000" />
+    <rect x="128" y="10" width="1" height="40" fill="#000" />
+    <rect x="131" y="10" width="3" height="40" fill="#000" />
+    <rect x="137" y="10" width="2" height="40" fill="#000" />
+    <rect x="141" y="10" width="3" height="40" fill="#000" />
+    <text x="120" y="65" font-family="monospace" font-size="7" text-anchor="middle">ABC-002</text>
+    <text x="120" y="80" font-family="system-ui, sans-serif" font-size="6" font-weight="700" fill="#FF6B35" text-anchor="middle">EASY PRINTS</text>
+    
+    <!-- Card 3 -->
+    <rect x="170" y="0" width="70" height="90" fill="#ffffff" rx="3" stroke="#cccccc" />
+    <rect x="178" y="10" width="4" height="40" fill="#000" />
+    <rect x="185" y="10" width="1" height="40" fill="#000" />
+    <rect x="188" y="10" width="3" height="40" fill="#000" />
+    <rect x="194" y="10" width="2" height="40" fill="#000" />
+    <rect x="199" y="10" width="5" height="40" fill="#000" />
+    <rect x="207" y="10" width="2" height="40" fill="#000" />
+    <rect x="211" y="10" width="2" height="40" fill="#000" />
+    <rect x="216" y="10" width="4" height="40" fill="#000" />
+    <rect x="223" y="10" width="1" height="40" fill="#000" />
+    <text x="205" y="65" font-family="monospace" font-size="7" text-anchor="middle">ABC-003</text>
+    <text x="205" y="80" font-family="system-ui, sans-serif" font-size="6" font-weight="700" fill="#FF6B35" text-anchor="middle">EASY PRINTS</text>
+  </g>
+  
+  <text x="200" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Barcode Labels</text>
+  <text x="200" y="52" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#777" text-anchor="middle">High-Resolution Retail &amp; Inventory Serialized Barcodes</text>
+</svg>

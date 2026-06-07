@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="label-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="100%" stop-color="#FF8F65" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="250" fill="#f4f4f6" rx="16" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Cylinder Roll Mockup representation -->
+  <ellipse cx="200" cy="180" rx="90" ry="25" fill="#cfcfd6" />
+  <ellipse cx="200" cy="100" rx="90" ry="25" fill="#e8e8ec" stroke="#cfcfd6" />
+  <rect x="110" y="100" width="180" height="80" fill="#e8e8ec" />
+  <line x1="110" y1="100" x2="110" y2="180" stroke="#cfcfd6" />
+  <line x1="290" y1="100" x2="290" y2="180" stroke="#cfcfd6" />
+  
+  <!-- Label peeling off -->
+  <path d="M 230 115 L 340 100 Q 360 120 340 140 L 230 135 Z" fill="url(#label-bg)" rx="4" />
+  <text x="285" y="123" font-family="system-ui, sans-serif" font-size="8" font-weight="700" fill="#FFFFFF" text-anchor="middle">PREMIUM LABEL</text>
+  
+  <!-- Roll core -->
+  <ellipse cx="200" cy="100" rx="25" ry="8" fill="#a8a8b0" />
+  
+  <text x="200" y="50" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Custom Label Printing</text>
+  <text x="200" y="68" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#777" text-anchor="middle">Rolls &amp; Sheets Stickers</text>
+</svg>

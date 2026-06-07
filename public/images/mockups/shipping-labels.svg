@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#f4f4f6" rx="16" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Shipping label sheet -->
+  <g transform="translate(130, 65)">
+    <rect x="0" y="0" width="140" height="110" fill="#ffffff" rx="4" stroke="#cccccc" stroke-width="1.5" />
+    <!-- Barcode representation -->
+    <rect x="15" y="15" width="4" height="25" fill="#000" />
+    <rect x="22" y="15" width="2" height="25" fill="#000" />
+    <rect x="27" y="15" width="5" height="25" fill="#000" />
+    <rect x="35" y="15" width="1" height="25" fill="#000" />
+    <rect x="39" y="15" width="3" height="25" fill="#000" />
+    <rect x="45" y="15" width="6" height="25" fill="#000" />
+    <rect x="54" y="15" width="2" height="25" fill="#000" />
+    
+    <text x="75" y="27" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#000">PRIORITY</text>
+    <line x1="15" y1="50" x2="125" y2="50" stroke="#000" stroke-width="1" />
+    
+    <!-- Address info -->
+    <text x="15" y="65" font-family="system-ui, sans-serif" font-size="6" font-weight="700" fill="#444">TO: Johnathan Doe</text>
+    <text x="15" y="75" font-family="system-ui, sans-serif" font-size="5" fill="#666">123 Industrial Area, Sector 4</text>
+    <text x="15" y="83" font-family="system-ui, sans-serif" font-size="5" fill="#666">Purnia, Bihar - 854301</text>
+    
+    <rect x="15" y="92" width="110" height="10" fill="#f0f0f2" />
+    <text x="70" y="99" font-family="monospace" font-size="6" font-weight="bold" fill="#000" text-anchor="middle">TRACKING: EP-9834-8239</text>
+  </g>
+  
+  <text x="200" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Shipping Labels</text>
+  <text x="200" y="52" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#777" text-anchor="middle">Self-Adhesive Courier &amp; Box Address Labels</text>
+</svg>

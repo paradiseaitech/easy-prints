@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="glossy-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a335c" />
+      <stop offset="50%" stop-color="#151935" />
+      <stop offset="100%" stop-color="#0b0e20" />
+    </linearGradient>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38ef7d" />
+      <stop offset="100%" stop-color="#11998e" />
+    </linearGradient>
+    <linearGradient id="glare-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="250" fill="url(#glossy-bg)" rx="16" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" />
+  
+  <!-- Vibrant pattern -->
+  <path d="M 120 0 Q 200 120 400 60 L 400 250 L 100 250 Z" fill="url(#brand-grad)" opacity="0.25" />
+  
+  <!-- Gloss reflection overlay -->
+  <polygon points="0,0 220,0 100,250 0,250" fill="url(#glare-grad)" />
+  
+  <!-- Content -->
+  <text x="40" y="80" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="1">EASY PRINTS</text>
+  <text x="40" y="105" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38ef7d" letter-spacing="2">HIGH GLOSS UV FINISH</text>
+  
+  <rect x="40" y="150" width="80" height="4" fill="#38ef7d" opacity="0.7" rx="2" />
+  <text x="40" y="180" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Jane Smith</text>
+  <text x="40" y="198" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#9999AA">Marketing Executive</text>
+  
+  <!-- Gloss Icon Indicator -->
+  <rect x="300" y="190" width="60" height="22" rx="11" fill="url(#brand-grad)" />
+  <text x="330" y="204" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">GLOSSY</text>
+</svg>

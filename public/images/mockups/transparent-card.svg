@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <!-- Checkerboard pattern to show transparency behind card -->
+    <pattern id="checkers" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#e8e8ec" />
+      <rect x="10" y="10" width="10" height="10" fill="#e8e8ec" />
+      <rect x="10" width="10" height="10" fill="#f4f4f7" />
+      <rect y="10" width="10" height="10" fill="#f4f4f7" />
+    </pattern>
+    <linearGradient id="frost-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Checkerboard background showing through -->
+  <rect width="400" height="250" fill="url(#checkers)" rx="16" />
+  
+  <!-- Transparent Card overlay with border -->
+  <rect x="15" y="15" width="370" height="220" fill="url(#frost-grad)" rx="12" stroke="#ffffff" stroke-width="1.5" />
+  
+  <!-- Content -->
+  <text x="45" y="80" font-family="system-ui, sans-serif" font-size="24" font-weight="900" fill="#1A1A2E" letter-spacing="1">EASY PRINTS</text>
+  <text x="45" y="102" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#FF6B35" letter-spacing="2">CLEAR FROSTED PVC</text>
+  
+  <text x="45" y="170" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1A1A2E">Alex Mercer</text>
+  <text x="45" y="188" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#555566">Tech Lead / Designer</text>
+  
+  <!-- Rounded corner display item -->
+  <rect x="290" y="180" width="75" height="22" rx="11" fill="#1A1A2E" />
+  <text x="327" y="194" font-family="system-ui, sans-serif" font-size="8" font-weight="700" fill="#FFFFFF" text-anchor="middle">TRANSPARENT</text>
+</svg>

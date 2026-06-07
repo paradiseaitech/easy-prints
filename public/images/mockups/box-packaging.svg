@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#f4f4f6" rx="16" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Isometric 3D Box -->
+  <g transform="translate(130, 70)">
+    <!-- Top Face -->
+    <polygon points="70,0 140,25 70,50 0,25" fill="#fbd5c6" stroke="#FF6B35" stroke-width="1" />
+    <!-- Left Face -->
+    <polygon points="0,25 70,50 70,120 0,95" fill="#FF6B35" stroke="#e0531e" stroke-width="1" />
+    <!-- Right Face -->
+    <polygon points="70,50 140,25 140,95 70,120" fill="#ff8f65" stroke="#e0531e" stroke-width="1" />
+    
+    <!-- Branding on Box -->
+    <text x="35" y="80" transform="skewY(20)" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">EASY BRANDS</text>
+  </g>
+  
+  <text x="200" y="40" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Box Packaging</text>
+  <text x="200" y="58" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#777" text-anchor="middle">Custom Branded Mono-Cartons &amp; Duplex Boxes</text>
+</svg>

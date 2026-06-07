@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="kraft-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8cfa7" />
+      <stop offset="100%" stop-color="#ccb183" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="250" fill="#f4f4f6" rx="16" stroke="#e0e0e0" stroke-width="1" />
+  
+  <!-- Food Box Outline -->
+  <g transform="translate(130, 80)">
+    <polygon points="70,0 130,15 100,55 30,35" fill="url(#kraft-grad)" stroke="#ab9165" stroke-width="1" />
+    <polygon points="30,35 100,55 85,95 15,75" fill="#ab9165" stroke="#90774c" stroke-width="1" />
+    <polygon points="100,55 130,15 115,55 85,95" fill="#bfa77a" stroke="#ab9165" stroke-width="1" />
+    
+    <!-- Organic Leaf Print -->
+    <path d="M 60 40 Q 65 30 75 35 Q 70 45 60 40 Z" fill="#2d6a4f" />
+    <text x="65" y="52" font-family="system-ui, sans-serif" font-size="6" font-weight="700" fill="#2d6a4f">FRESH FOOD</text>
+  </g>
+  
+  <text x="200" y="35" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#1A1A2E" text-anchor="middle">Food Packaging</text>
+  <text x="200" y="52" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#777" text-anchor="middle">Biodegradable Food-Grade Boxes &amp; Wraps</text>
+</svg>
