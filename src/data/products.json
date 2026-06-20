@@ -3,255 +3,282 @@
     "id": "visiting-card-printing",
     "name": "Visiting Cards",
     "slug": "visiting-card-printing",
-    "category": "Stationery",
-    "description": "Premium business cards with spot UV, foiling, and matte finish options. Choose from a wide range of paper stocks and finishes.",
+    "category": "digital-printing",
+    "description": "Premium business cards with Spot UV, gold foil, matte, glossy, and textured paper options. Perfect for professional corporate networking.",
     "priceStarting": 199,
     "image": "/images/Matt_Visiting_card.jpeg",
-    "keywords": "visiting card printing, business card printing, premium visiting cards",
-    "features": ["Premium paper quality", "Spot UV & foiling options", "Matte & glossy finish", "Bulk discounts available"],
+    "keywords": "visiting card printing, business cards, premium cards, corporate stationery Purnia",
+    "features": [
+      "Premium paper stocks up to 350 GSM",
+      "Matte, Glossy, Textured, and Velvet finishes",
+      "Spot UV and Metallic Foil accents available",
+      "Fast 24-48 hour delivery options"
+    ],
     "available": true,
-    "variations": [
+    "isBestSeller": true,
+    "isFeatured": true,
+    "sizes": [
+      "Standard (3.5\" x 2.0\")",
+      "Rounded Corners (3.5\" x 2.0\")",
+      "Square (2.5\" x 2.5\")"
+    ],
+    "materials": [
+      "350 GSM Art Card",
+      "Premium Velvet Laminated",
+      "Luxury Textured Paper",
+      "Spot UV Raised Varnish",
+      "Royal Gold Foil Accented"
+    ],
+    "specs": [
       {
-        "id": "matte-visiting-card",
-        "name": "Matte Visiting Card",
-        "slug": "matte-visiting-card",
-        "description": "Elegant non-reflective finish with a smooth, premium feel. Best for clean, professional layouts.",
-        "priceStarting": 199,
-        "image": "/images/Matt_Visiting_card.jpeg",
-        "keywords": "matte visiting card, professional business card, matte finish prints",
-        "features": ["350 GSM Art Card", "Smooth anti-glare finish", "Double-sided options", "Perfect for executive branding"]
+        "key": "Dimensions",
+        "value": "89mm x 51mm (Standard)"
       },
       {
-        "id": "glossy-visiting-card",
-        "name": "Glossy Visiting Card",
-        "slug": "glossy-visiting-card",
-        "description": "Vibrant and shiny finish that makes colors pop. Ideal for photography, media, and design businesses.",
-        "priceStarting": 249,
-        "image": "/images/mockups/glossy-card.svg",
-        "keywords": "glossy visiting card, shiny business card, vibrant card printing",
-        "features": ["350 GSM Premium Art Card", "High-gloss UV protective coating", "Water-resistant surface", "Rich color depth"]
+        "key": "Print Resolution",
+        "value": "300+ DPI High Definition"
       },
       {
-        "id": "textured-visiting-card",
-        "name": "Textured Visiting Card",
-        "slug": "textured-visiting-card",
-        "description": "Tactile premium papers with unique patterns. Feels organic, luxury, and outstanding in hand.",
-        "priceStarting": 399,
-        "image": "/images/mockups/textured-card.svg",
-        "keywords": "textured visiting card, luxury business card, premium paper cards",
-        "features": ["Imported textured papers", "Elegant touch and feel", "Classic retro & modern textures", "Sophisticated minimalist styling"]
+        "key": "Orientation",
+        "value": "Horizontal or Vertical"
       },
       {
-        "id": "spot-uv-visiting-card",
-        "name": "Spot UV & Gold Foil Card",
-        "slug": "spot-uv-visiting-card",
-        "description": "Glossy selective raised varnish or metallic gold foil accents on premium cards. Creates a memorable luxury texture.",
-        "priceStarting": 499,
-        "image": "/images/Gold_foil_Die_cut_visiting_cards.jpeg",
-        "keywords": "spot uv visiting card, raised varnish business card, gold foil visiting card, luxury spot uv prints",
-        "features": ["Metallic gold foil highlight", "Spot gloss details", "Velvet matte background", "Premium tactile effect"]
-      },
-      {
-        "id": "transparent-visiting-card",
-        "name": "Transparent Visiting Card",
-        "slug": "transparent-visiting-card",
-        "description": "Frosted or clear plastic cards that are waterproof, tearproof, and unforgettable.",
-        "priceStarting": 699,
-        "image": "/images/mockups/transparent-card.svg",
-        "keywords": "transparent visiting card, plastic business card, clear cards Purnia",
-        "features": ["Frosted transparent PVC", "Rounded corners by default", "Tear & water resistant", "Ultra-modern futuristic design"]
+        "key": "Minimum Order",
+        "value": "100 Cards"
       }
     ]
   },
   {
-    "id": "custom-tshirt-printing",
-    "name": "T-Shirt Printing",
-    "slug": "custom-tshirt-printing",
-    "category": "Apparel",
-    "description": "Custom t-shirt printing with DTF, screen printing, and sublimation. Perfect for events, promotions, and merchandise.",
-    "priceStarting": 299,
-    "image": "/images/placeholder-tshirt.svg",
-    "keywords": "t-shirt printing, custom tshirt printing, apparel printing",
-    "features": ["DTF & screen printing", "Sublimation available", "Bulk orders welcome", "Free design assistance"],
-    "available": true
-  },
-  {
-    "id": "banner-printing",
-    "name": "Banner Printing",
-    "slug": "banner-printing",
-    "category": "Signage",
-    "description": "Large format banner printing for events, promotions, advertising, and branding. High-resolution output with vibrant colors.",
-    "priceStarting": 99,
-    "image": "/images/placeholder-banner.svg",
-    "keywords": "banner printing, flex banner printing, large format printing",
-    "features": ["High resolution printing", "Weather resistant", "Multiple sizes available", "Fast turnaround"],
-    "available": true
-  },
-  {
-    "id": "flex-printing",
-    "name": "Flex Printing",
-    "slug": "flex-printing",
-    "category": "Signage",
-    "description": "High-resolution flex printing for hoardings, banners, and outdoor displays. Durable and vibrant.",
-    "priceStarting": 79,
-    "image": "/images/placeholder-flex.svg",
-    "keywords": "flex printing, flex banner printing, vinyl printing",
-    "features": ["Outdoor durable", "UV resistant inks", "Custom sizes", "Bulk rates available"],
-    "available": true
-  },
-  {
-    "id": "brochure-printing",
-    "name": "Brochure Printing",
-    "slug": "brochure-printing",
-    "category": "Stationery",
-    "description": "Tri-fold, bi-fold, and multi-page brochure printing with glossy or matte finish. Perfect for marketing collateral.",
-    "priceStarting": 249,
-    "image": "/images/Brochure.jpeg",
-    "keywords": "brochure printing, brochure printing online, catalogue printing",
-    "features": ["Multiple folding options", "Premium paper stock", "Glossy & matte finish", "Design service included"],
-    "available": true
-  },
-  {
-    "id": "flyer-printing",
-    "name": "Flyer Printing",
-    "slug": "flyer-printing",
-    "category": "Stationery",
-    "description": "Eye-catching flyer and leaflet printing for promotions, events, and business marketing.",
-    "priceStarting": 149,
-    "image": "/images/Flyers.jpeg",
-    "keywords": "flyer printing, leaflet printing, pamphlet printing",
-    "features": ["Vibrant color printing", "Various paper options", "Quick delivery", "Bulk pricing"],
-    "available": true
-  },
-  {
-    "id": "sticker-printing",
-    "name": "Sticker Printing",
-    "slug": "sticker-printing",
-    "category": "Packaging",
-    "description": "Custom sticker printing in various shapes, sizes, and materials. Great for branding, labels, and promotions.",
+    "id": "stickers-labels-printing",
+    "name": "Stickers & Labels",
+    "slug": "stickers-labels-printing",
+    "category": "digital-printing",
+    "description": "Custom printed roll and sheet labels for jars, boxes, packaging, and branding. Water-resistant and durable.",
     "priceStarting": 49,
-    "image": "/images/placeholder-sticker.svg",
-    "keywords": "sticker printing, custom sticker printing, label printing",
-    "features": ["Custom shapes available", "Waterproof options", "Vinyl & paper stickers", "Small or bulk orders"],
-    "available": true
-  },
-  {
-    "id": "mug-printing",
-    "name": "Mug Printing",
-    "slug": "mug-printing",
-    "category": "Gifts",
-    "description": "Personalized photo mug printing. Great for gifts, promotions, and corporate giveaways.",
-    "priceStarting": 199,
-    "image": "/images/placeholder-mug.svg",
-    "keywords": "mug printing, custom mug printing, photo mug printing",
-    "features": ["Full color printing", "Dishwasher safe", "Bulk discounts", "Design template available"],
-    "available": true
-  },
-  {
-    "id": "wedding-card-printing",
-    "name": "Wedding Cards",
-    "slug": "wedding-card-printing",
-    "category": "Wedding",
-    "description": "Elegant wedding card printing with foil stamping, embossing, and premium paper options.",
-    "priceStarting": 25,
-    "image": "/images/placeholder-wedding.svg",
-    "keywords": "wedding card printing, wedding invitation printing, card printing",
-    "features": ["Foil stamping available", "Embossing options", "Premium paper", "Design assistance included"],
-    "available": true
-  },
-  {
-    "id": "corporate-gifts",
-    "name": "Corporate Gifts",
-    "slug": "corporate-gifts",
-    "category": "Gifts",
-    "description": "Custom corporate gifts for branding, events, and employee recognition. Premium quality with your logo.",
-    "priceStarting": 99,
-    "image": "/images/placeholder-gift.svg",
-    "keywords": "corporate gifts, corporate gifting, branded merchandise",
-    "features": ["Custom branding", "Wide product range", "Bulk orders welcome", "Gift packaging included"],
-    "available": true
-  },
-  {
-    "id": "packaging-printing",
-    "name": "Packaging Printing",
-    "slug": "packaging-printing",
-    "category": "Packaging",
-    "description": "Custom packaging boxes, cartons, and product packaging solutions for your business.",
-    "priceStarting": 15,
-    "image": "/images/Packaging.jpeg",
-    "keywords": "packaging printing, custom packaging boxes, product packaging",
-    "features": ["Custom sizes", "Eco-friendly options", "Brand printing", "Bulk pricing"],
+    "image": "/images/Labels.jpeg",
+    "keywords": "sticker printing, label printing, custom stickers, packaging labels Purnia",
+    "features": [
+      "Die-cut to any custom shape",
+      "Waterproof and smudge-proof materials",
+      "High adhesive back - sticks to any surface",
+      "Available on sheets or rolls"
+    ],
     "available": true,
-    "variations": [
+    "isBestSeller": true,
+    "isFeatured": true,
+    "sizes": [
+      "Round (2\" Circle)",
+      "Square (2\" x 2\")",
+      "Rectangular (3\" x 2\")",
+      "A4 Sheet Stickers",
+      "Custom Shape"
+    ],
+    "materials": [
+      "Glossy Paper Sticker",
+      "Waterproof White Vinyl",
+      "Waterproof Transparent Vinyl",
+      "Premium Holographic Film"
+    ],
+    "specs": [
       {
-        "id": "label-printing",
-        "name": "Label Printing",
-        "slug": "label-printing",
-        "description": "Custom printed roll or sheet labels for bottles, jars, bags, and industrial products.",
-        "priceStarting": 2,
-        "image": "/images/Labels.jpeg",
-        "keywords": "label printing, custom labels, product labels",
-        "features": ["Waterproof vinyl or paper", "Roll and sheet formats", "Custom die-cut shapes", "Strong adhesive back"]
+        "key": "Adhesive Type",
+        "value": "Permanent Acrylic Glue"
       },
       {
-        "id": "box-packaging",
-        "name": "Box Packaging",
-        "slug": "box-packaging",
-        "description": "Premium mono-cartons, corrugated boxes, and gift box structures printed with your brand logo.",
-        "priceStarting": 15,
-        "image": "/images/Packaging( cookie box ).jpeg",
-        "keywords": "box packaging, custom boxes, brand cartons",
-        "features": ["Duplex & Kraft boards", "Vibrant offset printing", "Sturdy structural strength", "Matte & glossy lamination options"]
+        "key": "Cutting",
+        "value": "Kiss-cut on sheets / Individual die-cut"
       },
       {
-        "id": "product-packaging",
-        "name": "Product Packaging",
-        "slug": "product-packaging",
-        "description": "Comprehensive retail packaging solutions including header cards, hang tags, and inserts.",
-        "priceStarting": 5,
-        "image": "/images/mockups/product-packaging.svg",
-        "keywords": "product packaging, retail packaging, custom tags",
-        "features": ["Premium cardboard stocks", "Custom dimensions", "Punch hole options", "High definition detailing"]
+        "key": "Finish",
+        "value": "Glossy or Matte Lamination"
       },
       {
-        "id": "food-packaging",
-        "name": "Food Packaging",
-        "slug": "food-packaging",
-        "description": "Food-grade, eco-friendly boxes, containers, and wrapping options that keep food fresh and safe.",
-        "priceStarting": 8,
-        "image": "/images/Packaging (Cake&Pastry boxes).jpeg",
-        "keywords": "food packaging, eco-friendly food boxes, food grade print",
-        "features": ["100% food-grade material", "Oil & grease resistant lining", "Microwave friendly options", "Biodegradable materials"]
+        "key": "MOQ",
+        "value": "50 Pieces"
+      }
+    ]
+  },
+  {
+    "id": "booklet-printing",
+    "name": "Booklets",
+    "slug": "booklet-printing",
+    "category": "offset-printing",
+    "description": "High-volume booklets, newsletters, product catalogs, and instruction manuals printed on premium paper with saddle stitch or perfect binding.",
+    "priceStarting": 499,
+    "image": "/images/Reminder_cards.jpeg",
+    "keywords": "booklet printing, catalog printing, manuals, magazine printing Bihar",
+    "features": [
+      "Saddle-stitch, wire-o, or perfect binding",
+      "A4 and A5 sizes with custom page counts",
+      "Thicker cover page with matte/gloss lamination",
+      "Bulk offset rates for superior economy"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": true,
+    "sizes": [
+      "A4 Size (8.3\" x 11.7\")",
+      "A5 Size (5.8\" x 8.3\")",
+      "Custom Booklet Size"
+    ],
+    "materials": [
+      "130 GSM Art Paper (Inside Pages)",
+      "170 GSM Art Paper (Inside Pages)",
+      "300 GSM Matte Laminated (Cover Page)",
+      "300 GSM Gloss Laminated (Cover Page)"
+    ],
+    "specs": [
+      {
+        "key": "Binding Options",
+        "value": "Saddle Stitch / Perfect Bound"
       },
       {
-        "id": "shipping-labels",
-        "name": "Shipping Labels",
-        "slug": "shipping-labels",
-        "description": "Pre-cut thermal and self-adhesive labels for packages and courier boxes.",
-        "priceStarting": 1,
-        "image": "/images/mockups/shipping-labels.svg",
-        "keywords": "shipping labels, address labels, courier labels",
-        "features": ["Standard shipping sizes", "Excellent print legibility", "Smudge-proof thermal coating", "Permanent high-tack glue"]
+        "key": "Page Limit",
+        "value": "8 to 120 Pages"
       },
       {
-        "id": "barcode-labels",
-        "name": "Barcode Labels",
-        "slug": "barcode-labels",
-        "description": "High-density barcode stickers on rolls or sheets for inventory and retail scan systems.",
-        "priceStarting": 0.5,
-        "image": "/images/mockups/barcode-labels.svg",
-        "keywords": "barcode labels, barcode stickers, serial stickers",
-        "features": ["Precise crisp line prints", "Scratch-resistant inks", "Compatible with all scanners", "Sequentially numbered available"]
+        "key": "Print Engine",
+        "value": "High-Speed Offset Printing"
       },
       {
-        "id": "custom-stickers",
-        "name": "Custom Stickers",
-        "slug": "custom-stickers",
-        "description": "Die-cut individual stickers for branding, laptop decorations, or promotional hand-outs.",
-        "priceStarting": 3,
-        "image": "/images/mockups/custom-stickers.svg",
-        "keywords": "custom stickers, die cut stickers, branding stickers",
-        "features": ["Premium thick vinyl", "UV protective overlay", "No sticky residue on peel", "Vibrant fade-resistant colors"]
+        "key": "MOQ",
+        "value": "50 Booklets"
+      }
+    ]
+  },
+  {
+    "id": "certificate-printing",
+    "name": "Certificates",
+    "slug": "certificate-printing",
+    "category": "digital-printing",
+    "description": "Print official certificates, diplomas, and appreciation awards on luxury heavy-weight papers. Optional gold foil borders available.",
+    "priceStarting": 149,
+    "image": "/images/placeholder-idcard.svg",
+    "keywords": "certificate printing, school certificates, custom appreciation awards Purnia",
+    "features": [
+      "Thick premium cardstock (300+ GSM)",
+      "Elegant textured and metallic paper stocks",
+      "Optional gold foil stamping for borders",
+      "Perfect for schools, colleges, and corporate events"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": true,
+    "sizes": [
+      "A4 Size (Standard)",
+      "Letter Size (8.5\" x 11\")",
+      "A3 Size (Larger Layout)"
+    ],
+    "materials": [
+      "300 GSM Art Card",
+      "Premium Textured Ivory Paper",
+      "Gold Metallic Pearl Cardstock",
+      "Classic Parchment Paper"
+    ],
+    "specs": [
+      {
+        "key": "Finishing",
+        "value": "Foil borders / Plain cut"
+      },
+      {
+        "key": "Resolution",
+        "value": "600 DPI Ultra Sharp Text"
+      },
+      {
+        "key": "Minimum Order",
+        "value": "10 Certificates"
+      }
+    ]
+  },
+  {
+    "id": "pen-printing",
+    "name": "Pens",
+    "slug": "pens",
+    "category": "digital-printing",
+    "description": "Custom branded pens with laser engraving or digital UV printing. Excellent corporate giveaways and promotional handouts.",
+    "priceStarting": 19,
+    "image": "/images/custom-pens-1781952366443.jpg",
+    "keywords": "custom pens, branded pens, laser engraved pens corporate gifts Purnia",
+    "features": [
+      "High-precision laser engraving or UV color print",
+      "Available in metal and premium plastic bodies",
+      "Comfortable grip with smooth blue/black ink refill",
+      "Custom branding with logo and company name"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": false,
+    "sizes": [
+      "Standard Pen Size"
+    ],
+    "materials": [
+      "Premium Matte Black Metal Pen",
+      "Metallic Executive Silver Pen",
+      "Eco-Friendly Bamboo Pen",
+      "Classic Ballpoint Plastic Pen"
+    ],
+    "specs": [
+      {
+        "key": "Ink Color",
+        "value": "Blue / Black"
+      },
+      {
+        "key": "Print Type",
+        "value": "Laser Engraving / Digital UV Print"
+      },
+      {
+        "key": "Refillable",
+        "value": "Yes"
+      },
+      {
+        "key": "MOQ",
+        "value": "50 Pieces"
+      }
+    ]
+  },
+  {
+    "id": "tshirt-printing",
+    "name": "T-Shirts",
+    "slug": "tshirt-printing",
+    "category": "flex-uv-printing",
+    "description": "Premium cotton and polyester custom T-shirts printed with high-durability DTF and sublimation. Ideal for corporate branding and team events.",
+    "priceStarting": 249,
+    "image": "/images/placeholder-tshirt.svg",
+    "keywords": "tshirt printing, custom t-shirts, DTF print, promotional apparel Bihar",
+    "features": [
+      "100% Super-combed cotton or breathable polyester",
+      "Vibrant, stretchable, crack-resistant DTF prints",
+      "Available in Round neck, Polo collars, and multiple colors",
+      "Machine washable with long-lasting color fastness"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": true,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "materials": [
+      "180 GSM 100% Cotton (Round Neck)",
+      "220 GSM Premium Polo Cotton (Collar)",
+      "Breathable Polyester Sublimation",
+      "Oversized Heavyweight Cotton (240 GSM)"
+    ],
+    "specs": [
+      {
+        "key": "Print Technology",
+        "value": "DTF (Direct-to-Film) / Sublimation"
+      },
+      {
+        "key": "Wash Care",
+        "value": "Machine wash cold, iron inside-out"
+      },
+      {
+        "key": "Minimum Order",
+        "value": "1 Shirt"
       }
     ]
   },
@@ -259,48 +286,709 @@
     "id": "photo-frames",
     "name": "Photo Frames",
     "slug": "photo-frames",
-    "category": "Gifts",
-    "description": "Premium custom photo frame printing in wood, acrylic, and metal finishes.",
-    "priceStarting": 399,
+    "category": "digital-printing",
+    "description": "Customizable photo frames in premium synthetic wood, glossy acrylic, and canvas prints. Best for gifts and home decor.",
+    "priceStarting": 299,
     "image": "/images/placeholder-frame.svg",
-    "keywords": "photo frames, custom photo frame, photo frame printing",
-    "features": ["Wood, acrylic & metal", "Custom sizes", "Matting options", "Wall mounting included"],
-    "available": true
+    "keywords": "custom photo frames, photo printing, canvas prints, wall decor Purnia",
+    "features": [
+      "Vibrant digital photo print on 250 GSM paper",
+      "Sturdy backboard with wall hanging attachments",
+      "Available with transparent acrylic protection layer",
+      "Perfect personalized gifts for birthdays, anniversaries"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": false,
+    "sizes": [
+      "A4 Frame (8\" x 12\")",
+      "A3 Frame (12\" x 18\")",
+      "Square Collage (12\" x 12\")",
+      "Poster Frame (18\" x 24\")"
+    ],
+    "materials": [
+      "Classic Textured Black Wood",
+      "Royal Walnut Wooden Frame",
+      "Ultra-Modern Acrylic Block Frame",
+      "Stretched Canvas Overlay"
+    ],
+    "specs": [
+      {
+        "key": "Display Options",
+        "value": "Wall Mount / Tabletop Stand"
+      },
+      {
+        "key": "Protection",
+        "value": "Shatterproof Matte/Glossy Acrylic Cover"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Piece"
+      }
+    ]
   },
   {
-    "id": "id-card-printing",
-    "name": "ID Cards",
-    "slug": "id-card-printing",
-    "category": "Stationery",
-    "description": "PVC and teslin ID card printing with lanyards, badges, and accessories.",
-    "priceStarting": 49,
-    "image": "/images/placeholder-idcard.svg",
-    "keywords": "id card printing, custom id cards, identity card printing",
-    "features": ["PVC & Teslin cards", "Lanyards included", "Photo quality print", "Bulk discounts"],
-    "available": true
+    "id": "awards-trophies",
+    "name": "Awards",
+    "slug": "awards-trophies",
+    "category": "signage-3d-letters",
+    "description": "Premium wooden, acrylic, and crystal awards. Laser cut and custom engraved for employee recognition, sports, and school achievements.",
+    "priceStarting": 399,
+    "image": "/images/Gold_foil_Die_cut_visiting_cards.jpeg",
+    "keywords": "awards, trophies printing, custom trophies, acrylic awards, corporate gifts Purnia",
+    "features": [
+      "Custom laser-cut shapes in acrylic or real wood",
+      "Elegant metallic foil inlay or full-color UV prints",
+      "Heavy base for a premium, solid weight feel",
+      "Custom gift packaging included by default"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": false,
+    "sizes": [
+      "Small (6 inch)",
+      "Medium (8 inch)",
+      "Large (10 inch)"
+    ],
+    "materials": [
+      "Premium Clear Acrylic (10mm)",
+      "Royal Mahogany Wooden Plaque",
+      "Crystal Glass Award",
+      "Eco Composite Recycled Wood"
+    ],
+    "specs": [
+      {
+        "key": "Engraving Technique",
+        "value": "Laser Etching / Flatbed UV Print"
+      },
+      {
+        "key": "Accessories",
+        "value": "Satin-lined premium gift box"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Piece"
+      }
+    ]
   },
   {
-    "id": "poster-printing",
-    "name": "Poster Printing",
-    "slug": "poster-printing",
-    "category": "Signage",
-    "description": "High-quality poster printing for events, rooms, advertising, and decor.",
+    "id": "envelope-printing",
+    "name": "Envelopes",
+    "slug": "envelope-printing",
+    "category": "offset-printing",
+    "description": "Professional corporate envelopes printed with your brand logo and address panel. Available in standard executive sizes.",
+    "priceStarting": 149,
+    "image": "/images/placeholder-packaging.svg",
+    "keywords": "envelope printing, corporate envelopes, custom stationery envelopes Purnia",
+    "features": [
+      "Printed on premium 100-120 GSM Maplitho papers",
+      "Peel-and-seal adhesive strip for easy closure",
+      "Vibrant full-color logo offset printing",
+      "Matching visiting card & letterhead packs available"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": false,
+    "sizes": [
+      "Executive Size (9.5\" x 4.25\")",
+      "C5 Size (9.0\" x 6.4\")",
+      "A4 Envelope (10\" x 12\" pocket)"
+    ],
+    "materials": [
+      "100 GSM Maplitho Paper",
+      "120 GSM Royal Executive Bond",
+      "Eco Kraft Paper (Brown)"
+    ],
+    "specs": [
+      {
+        "key": "Flap Closure",
+        "value": "Self-Adhesive Peel & Seal / Wet Lick Glue"
+      },
+      {
+        "key": "Print Orientation",
+        "value": "Front side printing"
+      },
+      {
+        "key": "MOQ",
+        "value": "100 Envelopes"
+      }
+    ]
+  },
+  {
+    "id": "flyers-brochures-printing",
+    "name": "Flyers & Brochures",
+    "slug": "flyers-brochures-printing",
+    "category": "digital-printing",
+    "description": "Vibrant marketing flyers and brochures in bi-fold, tri-fold, and flat leaflet layouts. The best way to distribute promotional menus and catalogs.",
+    "priceStarting": 149,
+    "image": "/images/Flyers.jpeg",
+    "keywords": "flyer printing, brochure printing, bi fold brochure, leaflets Bihar",
+    "features": [
+      "Vibrant color matching with glossy or matte art paper",
+      "Precise bi-fold or tri-fold machine creasing",
+      "Bulk offset print discounts for city-wide distributions",
+      "Expert layout check of margins and bleed lines"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": true,
+    "sizes": [
+      "A4 Leaflet (Flat)",
+      "A4 Bi-Fold Brochure",
+      "A4 Tri-Fold Brochure",
+      "A5 Flyer (Leaflet)"
+    ],
+    "materials": [
+      "130 GSM Glossy Art Paper",
+      "170 GSM Premium Art Paper",
+      "220 GSM Medium Cardstock"
+    ],
+    "specs": [
+      {
+        "key": "Fold Type",
+        "value": "No Fold / Bi-Fold (4 Panels) / Tri-Fold (6 Panels)"
+      },
+      {
+        "key": "Paper Finish",
+        "value": "Super Glossy / Silk Matte"
+      },
+      {
+        "key": "MOQ",
+        "value": "100 Copies"
+      }
+    ]
+  },
+  {
+    "id": "doctor-files",
+    "name": "Doctor Files",
+    "slug": "doctor-files",
+    "category": "offset-printing",
+    "description": "Custom printed patient file folders with pockets, clips, and branding panel. Crucial branding for clinics, hospitals, and diagnostic labs.",
+    "priceStarting": 349,
+    "image": "/images/Packaging.jpeg",
+    "keywords": "doctor file printing, patient files, clinic folders, medical printing Purnia",
+    "features": [
+      "Sturdy 350 GSM Duplex or Art Board",
+      "Single or double-sided pocket for prescription sheets",
+      "Metal spring clips fitted inside for report files",
+      "Laminated exterior cover for spill resistance"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": false,
+    "sizes": [
+      "Standard Patient File (10\" x 14\" folded)"
+    ],
+    "materials": [
+      "350 GSM Duplex White-Back Board",
+      "350 GSM Premium Art Card (Matte Laminated)",
+      "Eco Kraft Cardboard Folder"
+    ],
+    "specs": [
+      {
+        "key": "Fittings",
+        "value": "Plastic Ring Clip / Metal Spring Clip"
+      },
+      {
+        "key": "Pockets",
+        "value": "Single Inner Pocket / Dual Inner Pockets"
+      },
+      {
+        "key": "MOQ",
+        "value": "100 Folders"
+      }
+    ]
+  },
+  {
+    "id": "bill-books",
+    "name": "Bill Books",
+    "slug": "bill-books",
+    "category": "offset-printing",
+    "description": "Custom GST invoice bill books, cash memos, challans, and delivery notes. Duplicate or triplicate carbonless NCR paper sheets.",
     "priceStarting": 199,
-    "image": "/images/placeholder-poster.svg",
-    "keywords": "poster printing, custom poster printing, poster print",
-    "features": ["High resolution", "Multiple sizes", "Premium paper", "Matte & glossy finish"],
-    "available": true
+    "image": "/images/Packaging( cookie box ).jpeg",
+    "keywords": "bill book printing, invoice book, duplicate bill book NCR Purnia",
+    "features": [
+      "High-grade Carbonless (NCR) self-copying paper",
+      "Consecutive serial numbering stamped in red ink",
+      "Perforated pages for easy clean tearing",
+      "Cardboard binding cover wrapper sheet included"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": false,
+    "sizes": [
+      "A5 Size Cash Memo",
+      "A4 Size Invoice Book",
+      "A6 Small Receipt Book"
+    ],
+    "materials": [
+      "NCR Carbonless (1 Original + 1 Duplicate)",
+      "NCR Carbonless (1 Original + 2 Duplicates)",
+      "Standard Newsprint Paper (requires carbon carbon sheet)"
+    ],
+    "specs": [
+      {
+        "key": "Binding",
+        "value": "Left margin stapled and cloth bound"
+      },
+      {
+        "key": "Serial Numbering",
+        "value": "Yes, 6-digit customized numbering"
+      },
+      {
+        "key": "Pages per Book",
+        "value": "50 sets (100 or 150 leaves total)"
+      },
+      {
+        "key": "MOQ",
+        "value": "10 Books"
+      }
+    ]
   },
   {
-    "id": "standee-printing",
-    "name": "Standee Printing",
-    "slug": "standee-printing",
-    "category": "Signage",
-    "description": "Roll-up standees, X-standees, and custom display stands for events and promotions.",
-    "priceStarting": 599,
+    "id": "flyer-printing",
+    "name": "Flyers",
+    "slug": "flyer-printing",
+    "category": "digital-printing",
+    "description": "Eye-catching flat leaflets for local retail campaigns, menu cards, and marketing announcements. Highly affordable local advertising.",
+    "priceStarting": 149,
+    "image": "/images/Flyers.jpeg",
+    "keywords": "flyer printing, pamphlets, handbills, digital flyers Purnia",
+    "features": [
+      "Fast digital press printing",
+      "Various paper thickness options",
+      "Double-sided color printing",
+      "Perfect for restaurant menu cards"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "A5 Size (Standard Leaflet)",
+      "A4 Size Leaflet",
+      "A6 Mini Pamphlet"
+    ],
+    "materials": [
+      "130 GSM Art Paper (Vibrant Gloss)",
+      "100 GSM Bond Paper (Budget Friendly)",
+      "170 GSM Heavy Art Paper"
+    ],
+    "specs": [
+      {
+        "key": "Folding",
+        "value": "None (Flat Leaflet)"
+      },
+      {
+        "key": "Print",
+        "value": "Single-sided / Double-sided"
+      },
+      {
+        "key": "MOQ",
+        "value": "100 Copies"
+      }
+    ]
+  },
+  {
+    "id": "brochure-printing",
+    "name": "Brochures",
+    "slug": "brochure-printing",
+    "category": "digital-printing",
+    "description": "High-impact folded brochures to present catalogs, company profiles, and real estate flyers. Premium paper folding.",
+    "priceStarting": 249,
+    "image": "/images/Brochure.jpeg",
+    "keywords": "brochures printing online, corporate brochure fold, bi fold catalogue",
+    "features": [
+      "Professional score & folding",
+      "Art paper with matte or glossy coating",
+      "High density CMYK printing",
+      "Free design review before print"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "A4 Bi-Fold Brochure",
+      "A4 Tri-Fold Brochure",
+      "A3 Bi-Fold Catalog"
+    ],
+    "materials": [
+      "170 GSM Art Paper (Folds beautifully)",
+      "220 GSM Art Card (Requires scoring)",
+      "300 GSM Art Card (Matte Laminated)"
+    ],
+    "specs": [
+      {
+        "key": "Fold Type",
+        "value": "Bi-Fold / Tri-Fold (C-Fold / Z-Fold)"
+      },
+      {
+        "key": "Finish Options",
+        "value": "Velvet Matte / High Gloss Coating"
+      },
+      {
+        "key": "MOQ",
+        "value": "100 Copies"
+      }
+    ]
+  },
+  {
+    "id": "sticker-printing",
+    "name": "Stickers",
+    "slug": "sticker-printing",
+    "category": "digital-printing",
+    "description": "Custom cut stickers for laptops, branding, giveaways, and envelopes. Available in paper or vinyl stocks.",
+    "priceStarting": 49,
+    "image": "/images/placeholder-sticker.svg",
+    "keywords": "stickers printing, die cut stickers, custom stickers Purnia",
+    "features": [
+      "High quality digital prints on sheets",
+      "Peel-and-stick backing",
+      "Custom shape cutting",
+      "Ideal for small businesses"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "Square 2\" x 2\"",
+      "Circle 2\" Diameter",
+      "Rectangular 3\" x 2\""
+    ],
+    "materials": [
+      "Glossy White Paper Adhesive",
+      "Premium White Vinyl (Water-resistant)",
+      "Transparent Vinyl Sheet"
+    ],
+    "specs": [
+      {
+        "key": "Adhesion Strength",
+        "value": "Medium-High Tack"
+      },
+      {
+        "key": "Supplied on",
+        "value": "A4 Sheets"
+      },
+      {
+        "key": "MOQ",
+        "value": "50 Pieces"
+      }
+    ]
+  },
+  {
+    "id": "flex-banner-printing",
+    "name": "Flex Banners",
+    "slug": "flex-banner-printing",
+    "category": "flex-uv-printing",
+    "description": "Large format flex banner printing for hoardings, shop boards, and outdoor advertising. Weatherproof solvent prints.",
+    "priceStarting": 99,
+    "image": "/images/placeholder-banner.svg",
+    "keywords": "flex printing, flex banner, banner printing shop Purnia, hoardings",
+    "features": [
+      "Durable heavy-duty PVC Flex material",
+      "Rain, wind, and UV fade-resistant solvent inks",
+      "Optional eyelets or pockets for easy hanging",
+      "Massive sizing panels welded seamlessly"
+    ],
+    "available": true,
+    "isBestSeller": true,
+    "isFeatured": true,
+    "sizes": [
+      "4' x 3' Banner",
+      "6' x 4' Shop Board",
+      "8' x 6' Event Backdrop",
+      "Custom Dimensions (per sq. ft.)"
+    ],
+    "materials": [
+      "Normal Flex (Media 260 GSM)",
+      "Star Flex (Media 340 GSM - Glossy, High Strength)",
+      "Backlit Flex (Media 440 GSM - Light diffuses evenly)"
+    ],
+    "specs": [
+      {
+        "key": "Print Resolution",
+        "value": "720 DPI Large Format Inkjet"
+      },
+      {
+        "key": "Finishing",
+        "value": "Side stitching + Metal Eyelets (Grommets)"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Banner"
+      }
+    ]
+  },
+  {
+    "id": "uv-printing",
+    "name": "UV Printing",
+    "slug": "uv-printing",
+    "category": "flex-uv-printing",
+    "description": "High-fidelity flatbed UV printing on rigid surfaces like acrylic, wood, glass, MDF, and metal plates. Instant UV lamp curing for scratch-proof colors.",
+    "priceStarting": 149,
+    "image": "/images/Labels.jpeg",
+    "keywords": "uv printing, flatbed printing, print on acrylic wood glass Purnia",
+    "features": [
+      "Prints on any flat rigid material up to 2 inches thickness",
+      "Includes white ink layering for printing on dark/transparent surfaces",
+      "Tactile raised emboss texture effects are possible",
+      "Indoor durable for up to 10 years without color fade"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "A4 Flatbed Area",
+      "A3 Flatbed Area",
+      "Custom Size (per sq. ft.)"
+    ],
+    "materials": [
+      "UV Printed Acrylic Plate (3mm)",
+      "UV Printed MDF / Wood Board (8mm)",
+      "UV Printed Metal Sign Plate",
+      "Direct Glass Print"
+    ],
+    "specs": [
+      {
+        "key": "Ink Set",
+        "value": "CMYK + White + Varnish"
+      },
+      {
+        "key": "Scratch Resistance",
+        "value": "Very High (Cured UV Inks)"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Piece"
+      }
+    ]
+  },
+  {
+    "id": "vinyl-printing",
+    "name": "Vinyl Printing",
+    "slug": "vinyl-printing",
+    "category": "flex-uv-printing",
+    "description": "Custom printed self-adhesive vinyl rolls for glass frosting, shop front branding, wall graphics, and vehicle decaling.",
+    "priceStarting": 89,
+    "image": "/images/placeholder-flex.svg",
+    "keywords": "vinyl printing, eco solvent vinyl, glass branding, stickers Purnia",
+    "features": [
+      "High resolution eco-solvent photo printing",
+      "Available in glossy, matte, or micro-perforated one-way-vision",
+      "Waterproof and bubble-free installations",
+      "Ideal for indoor wall murals & office glass doors"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "Custom Dimensions (per sq. ft.)"
+    ],
+    "materials": [
+      "Glossy Monomeric Vinyl Stickers",
+      "Matte Bubble-Free Wall Vinyl",
+      "One-Way-Vision Window Film",
+      "Frosted Glass Privacy Film"
+    ],
+    "specs": [
+      {
+        "key": "Adhesive Type",
+        "value": "Gray/Clear Permanent Backing"
+      },
+      {
+        "key": "Print Engine",
+        "value": "Epson Eco-Solvent High-Def"
+      },
+      {
+        "key": "Lamination Option",
+        "value": "Cold Laminated (Scratch Shield)"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 sq. ft."
+      }
+    ]
+  },
+  {
+    "id": "acrylic-letters",
+    "name": "Acrylic Letters",
+    "slug": "acrylic-letters",
+    "category": "signage-3d-letters",
+    "description": "3D laser cut acrylic lettering and corporate logos for reception walls, office facades, and storefront signs. Premium thickness.",
+    "priceStarting": 799,
     "image": "/images/placeholder-standee.svg",
-    "keywords": "standee printing, roll up standee, display stand printing",
-    "features": ["Roll-up & X-standee", "Durable material", "Easy setup", "Custom graphics"],
-    "available": true
+    "keywords": "acrylic letters, 3d acrylic sign, logo cut, shop signboard Purnia",
+    "features": [
+      "Laser cut edges - clean, polished glass-like sides",
+      "Available in solid colors, mirror gold/silver, or printed faces",
+      "Thickness options ranging from 3mm to 10mm letters",
+      "Supplied with mounting stencil for easy alignment"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "Standard Letter Height 6 inches",
+      "Standard Letter Height 12 inches",
+      "Custom Board Stencil Set"
+    ],
+    "materials": [
+      "Solid Opaque Acrylic Board (Black/White/Red)",
+      "Luxury Mirror Gold Acrylic Plate",
+      "Luxury Mirror Silver Acrylic Plate",
+      "Acrylic Front with MDF Backing"
+    ],
+    "specs": [
+      {
+        "key": "Thickness Options",
+        "value": "3mm / 5mm / 8mm / 10mm"
+      },
+      {
+        "key": "Mounting",
+        "value": "Industrial double-sided tape / Spacer stud mounts"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Signage Set"
+      }
+    ]
+  },
+  {
+    "id": "led-sign-boards",
+    "name": "LED Sign Boards",
+    "slug": "led-sign-boards",
+    "category": "signage-3d-letters",
+    "description": "Premium illuminated 3D LED signs, glow signboards, and neon flex designs for storefronts. Bright, power-saving signage.",
+    "priceStarting": 1499,
+    "image": "/images/placeholder-standee.svg",
+    "keywords": "led board, led signboard, neon flex sign, glow sign board Purnia",
+    "features": [
+      "Samsung high-lumens LED modules fitted inside",
+      "IP67 waterproof wiring for outdoor rain protection",
+      "High grade acrylic front with ACP backing channel",
+      "Saves up to 70% power compared to neon tubes"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": true,
+    "sizes": [
+      "Standard shop front 4' x 2'",
+      "Standard shop front 6' x 3'",
+      "Custom Dimensions (per running foot)"
+    ],
+    "materials": [
+      "LED Acrylic Front with ACP Back Box",
+      "Liquid Acrylic LED Borderless Letters",
+      "Custom Neon Flex on Transparent Acrylic Base"
+    ],
+    "specs": [
+      {
+        "key": "LED Brand",
+        "value": "Samsung Modules / Premium OSRAM"
+      },
+      {
+        "key": "Power Supply",
+        "value": "12V MeanWell Weatherproof Driver"
+      },
+      {
+        "key": "Glow Direction",
+        "value": "Front-Lit / Back-Lit (Halo Effect)"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Board"
+      }
+    ]
+  },
+  {
+    "id": "acp-boards",
+    "name": "ACP Boards",
+    "slug": "acp-boards",
+    "category": "signage-3d-letters",
+    "description": "Heavy-duty Aluminum Composite Panel (ACP) sheets mounted on iron frames. Perfect base for 3D LED letters and outdoor shop displays.",
+    "priceStarting": 2499,
+    "image": "/images/placeholder-standee.svg",
+    "keywords": "acp sign board, aluminum composite panel sign, facade board Bihar",
+    "features": [
+      "Sturdy 3mm or 4mm ACP sheet base plate",
+      "Rust-proof iron square pipe support framing",
+      "Available in gloss, matte, metallic, and wooden grain shades",
+      "Ultra-durable against direct sunlight and rain storms"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "Shop Facade Base 8' x 3'",
+      "Shop Facade Base 10' x 4'",
+      "Custom ACP Cladding area"
+    ],
+    "materials": [
+      "3mm ACP Sheet on Iron Pipe Frame",
+      "4mm Heavy Duty ACP (Exterior Grade)",
+      "Premium Wooden Grain ACP Facade"
+    ],
+    "specs": [
+      {
+        "key": "Base Frame",
+        "value": "1 inch GI (Galvanized Iron) Square Pipe"
+      },
+      {
+        "key": "ACP Sheet Brand",
+        "value": "Aludecor / Eurobond / Alstrong"
+      },
+      {
+        "key": "Warranty",
+        "value": "5 Years Shade Fade Resistance"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Board"
+      }
+    ]
+  },
+  {
+    "id": "ss-letters",
+    "name": "SS Letters",
+    "slug": "ss-letters",
+    "category": "signage-3d-letters",
+    "description": "Stainless Steel 3D letters and corporate logos in golden or silver chrome finishes. Premium rust-proof building signages.",
+    "priceStarting": 1199,
+    "image": "/images/placeholder-standee.svg",
+    "keywords": "ss letters, steel 3d sign, metal letters shop Purnia, corporate signage",
+    "features": [
+      "Laser cut and welded from Grade 304 Stainless Steel",
+      "Golden mirror, silver mirror, or brushed hair-line textures",
+      "Completely rust-proof and weatherproof for life",
+      "Optional LED halo back-light modules fitted"
+    ],
+    "available": true,
+    "isBestSeller": false,
+    "isFeatured": false,
+    "sizes": [
+      "Standard Letter Height 6 inches",
+      "Standard Letter Height 12 inches",
+      "Custom Corporate Wall Set"
+    ],
+    "materials": [
+      "SS Golden Mirror Finish (Grade 304)",
+      "SS Silver Mirror Finish (Grade 304)",
+      "SS Brushed Titanium Golden Plate",
+      "SS Brushed Silver Plate"
+    ],
+    "specs": [
+      {
+        "key": "Material Grade",
+        "value": "304 Exterior Grade Stainless Steel"
+      },
+      {
+        "key": "Backing Glow",
+        "value": "LED Halo Glow Module (optional)"
+      },
+      {
+        "key": "MOQ",
+        "value": "1 Signage Set"
+      }
+    ]
   }
 ]

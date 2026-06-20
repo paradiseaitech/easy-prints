@@ -1,6 +1,8 @@
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
-import { getAllProducts } from "@/lib/products"
+import { getAllProducts, getCategories } from "@/lib/products"
+import { getAllTestimonials } from "@/lib/testimonials"
+import { getBusinessNeedsData } from "@/data/business-needs-data"
 import { AdminDashboard } from "./admin-dashboard"
 
 export default async function ManagePage() {
@@ -11,6 +13,17 @@ export default async function ManagePage() {
     redirect("/admin/manage/login")
   }
 
-  const products = getAllProducts()
-  return <AdminDashboard products={products} />
+  const products = await getAllProducts()
+  const categories = await getCategories()
+  const testimonials = await getAllTestimonials()
+  const businessNeeds = Object.values(await getBusinessNeedsData())
+
+  return (
+    <AdminDashboard
+      products={products}
+      categories={categories}
+      testimonials={testimonials}
+      businessNeeds={businessNeeds}
+    />
+  )
 }

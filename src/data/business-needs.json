@@ -1,0 +1,741 @@
+{
+  "startup-branding": {
+    "title": "Startup Branding",
+    "slug": "startup-branding",
+    "tagline": "Establish your brand with premium marketing collaterals",
+    "description": "Launch your venture with confidence. From office decor to employee onboarding and networking kits, we provide unified branding prints under one roof.",
+    "bannerImage": "/images/Startup_Building.png",
+    "sections": [
+      {
+        "title": "Office Decor",
+        "products": [
+          {
+            "name": "Acrylic Name Plates",
+            "description": "High-precision laser cut acrylic plates with corporate wall studs.",
+            "priceStarting": 799,
+            "image": "/images/placeholder-standee.svg",
+            "slug": "acrylic-letters"
+          },
+          {
+            "name": "ACP Sign Boards",
+            "description": "Durable aluminum composite panels on heavy iron frames.",
+            "priceStarting": 2499,
+            "image": "/images/placeholder-standee.svg",
+            "slug": "acp-boards"
+          },
+          {
+            "name": "Wall Graphics",
+            "description": "Custom self-adhesive wall vinyls for office lobby branding.",
+            "priceStarting": 89,
+            "image": "/images/placeholder-flex.svg",
+            "slug": "vinyl-printing"
+          },
+          {
+            "name": "Posters",
+            "description": "High-definition wall posters for meeting rooms and workspaces.",
+            "priceStarting": 199,
+            "image": "/images/placeholder-poster.svg",
+            "slug": "vinyl-printing"
+          },
+          {
+            "name": "Canvas Prints",
+            "description": "Personalized canvas overlays stretched on sturdy wooden frames.",
+            "priceStarting": 399,
+            "image": "/images/placeholder-frame.svg",
+            "slug": "photo-frames"
+          },
+          {
+            "name": "Office Branding",
+            "description": "Full glass frosting and branding graphics for corporate cabins.",
+            "priceStarting": 89,
+            "image": "/images/placeholder-flex.svg",
+            "slug": "vinyl-printing"
+          }
+        ]
+      },
+      {
+        "title": "Employee Onboarding",
+        "products": [
+          {
+            "name": "ID Cards",
+            "description": "Premium double-sided PVC cards with chip holders.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Lanyards",
+            "description": "Branded satin-finish neck ribbons with metallic card hooks.",
+            "priceStarting": 25,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Welcome Kits",
+            "description": "Complete corporate welcome box containing card, pen, and bottle.",
+            "priceStarting": 899,
+            "image": "/images/placeholder-gift.svg",
+            "slug": "corporate-gifts"
+          },
+          {
+            "name": "Corporate T-Shirts",
+            "description": "Custom DTF printed t-shirts with startup logo badges.",
+            "priceStarting": 249,
+            "image": "/images/placeholder-tshirt.svg",
+            "slug": "tshirt-printing"
+          },
+          {
+            "name": "Branded Notebooks",
+            "description": "Sturdy hardbound diaries with customized foil-printed covers.",
+            "priceStarting": 149,
+            "image": "/images/Reminder_cards.jpeg",
+            "slug": "booklet-printing"
+          },
+          {
+            "name": "Branded Pens",
+            "description": "Sleek ballpoint pens customized with laser branding.",
+            "priceStarting": 19,
+            "image": "/images/placeholder-gift.svg",
+            "slug": "pen-printing"
+          }
+        ]
+      },
+      {
+        "title": "Networking & Promotion",
+        "products": [
+          {
+            "name": "Visiting Cards",
+            "description": "Executive business cards with velvet matte and spot UV varnish.",
+            "priceStarting": 199,
+            "image": "/images/Matt_Visiting_card.jpeg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Flyers",
+            "description": "Local promotional handbills on glossy art papers.",
+            "priceStarting": 149,
+            "image": "/images/Flyers.jpeg",
+            "slug": "flyer-printing"
+          },
+          {
+            "name": "Brochures",
+            "description": "Professional tri-fold catalogs for marketing presentations.",
+            "priceStarting": 249,
+            "image": "/images/Brochure.jpeg",
+            "slug": "brochure-printing"
+          },
+          {
+            "name": "Stickers",
+            "description": "Custom die-cut branding stickers for promo giveaways.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-sticker.svg",
+            "slug": "sticker-printing"
+          },
+          {
+            "name": "Certificates",
+            "description": "Official achievement certificates on imported ivory paper.",
+            "priceStarting": 149,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "certificate-printing"
+          },
+          {
+            "name": "Booklets",
+            "description": "Stapled product catalogs and newsletters.",
+            "priceStarting": 499,
+            "image": "/images/Reminder_cards.jpeg",
+            "slug": "booklet-printing"
+          }
+        ]
+      },
+      {
+        "title": "Packaging & Branding",
+        "products": [
+          {
+            "name": "Product Labels",
+            "description": "Roll and sheet labels printed on waterproof vinyl stock.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          },
+          {
+            "name": "Packaging Stickers",
+            "description": "Die-cut round stickers for sealing cardboard shipping boxes.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-sticker.svg",
+            "slug": "stickers-labels-printing"
+          },
+          {
+            "name": "Paper Bags",
+            "description": "Eco-friendly kraft shopping bags with twisted paper handles.",
+            "priceStarting": 15,
+            "image": "/images/placeholder-packaging.svg",
+            "slug": "envelope-printing"
+          },
+          {
+            "name": "Packaging Boxes",
+            "description": "Custom mono-cartons and boxes printed with company logo.",
+            "priceStarting": 15,
+            "image": "/images/Packaging.jpeg",
+            "slug": "doctor-files"
+          },
+          {
+            "name": "Thank You Cards",
+            "description": "Brand cards inside shipping boxes to appreciate buyers.",
+            "priceStarting": 199,
+            "image": "/images/Matt_Visiting_card.jpeg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Hang Tags",
+            "description": "Product price tags with punch holes for clothing and gifts.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          }
+        ]
+      }
+    ]
+  },
+  "cafes-restaurants": {
+    "title": "Cafés & Restaurants",
+    "slug": "cafes-restaurants",
+    "tagline": "Stunning menus, table collateral, and customized packaging",
+    "description": "Build an appetizing brand presence. From table placements to carry-home takeaway bags and stickers, we cover all food and beverage industry requirements.",
+    "bannerImage": "/images/Cafes&Restaurants.png",
+    "sections": [
+      {
+        "title": "Menu & Table Branding",
+        "products": [
+          {
+            "name": "Menu Cards",
+            "description": "Spill-proof laminated restaurant menus with creasing folds.",
+            "priceStarting": 199,
+            "image": "/images/Brochure.jpeg",
+            "slug": "brochure-printing"
+          },
+          {
+            "name": "Table Tents",
+            "description": "Three-sided table stands to display chef specials and drinks.",
+            "priceStarting": 99,
+            "image": "/images/placeholder-brochure.svg",
+            "slug": "brochure-printing"
+          },
+          {
+            "name": "QR Code Displays",
+            "description": "Acrylic table tents printed with digital menu scan codes.",
+            "priceStarting": 149,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "acrylic-letters"
+          }
+        ]
+      },
+      {
+        "title": "Packaging",
+        "products": [
+          {
+            "name": "Food Packaging Labels",
+            "description": "Waterproof container seals for delivery packaging.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          },
+          {
+            "name": "Paper Bags",
+            "description": "Sturdy takeaway bags printed with restaurant logo.",
+            "priceStarting": 15,
+            "image": "/images/placeholder-packaging.svg",
+            "slug": "envelope-printing"
+          },
+          {
+            "name": "Delivery Stickers",
+            "description": "Tamper-evident security seals for food delivery boxes.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-sticker.svg",
+            "slug": "stickers-labels-printing"
+          }
+        ]
+      },
+      {
+        "title": "Marketing",
+        "products": [
+          {
+            "name": "Flyers",
+            "description": "Menu leaflets and discount pamphlets for local distribution.",
+            "priceStarting": 149,
+            "image": "/images/Flyers.jpeg",
+            "slug": "flyer-printing"
+          },
+          {
+            "name": "Posters",
+            "description": "Vibrant high-gloss posters showcasing food items.",
+            "priceStarting": 199,
+            "image": "/images/placeholder-poster.svg",
+            "slug": "vinyl-printing"
+          },
+          {
+            "name": "Promotional Banners",
+            "description": "Durable flex banners for storefront outdoor campaigns.",
+            "priceStarting": 99,
+            "image": "/images/placeholder-banner.svg",
+            "slug": "flex-banner-printing"
+          }
+        ]
+      }
+    ]
+  },
+  "education-campus": {
+    "title": "Education & Campus Needs",
+    "slug": "education-campus",
+    "tagline": "Academic credentials and school branding stationery",
+    "description": "Provide a structured learning environment. We supply certified ID systems, custom academic stationery, student awards, and marketing banners.",
+    "bannerImage": "/images/Education&Campus_Needs.png",
+    "sections": [
+      {
+        "title": "Student Essentials",
+        "products": [
+          {
+            "name": "ID Cards",
+            "description": "Highly durable PVC identity cards for school/college students.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Lanyards",
+            "description": "Custom woven lanyards with school name and logo prints.",
+            "priceStarting": 25,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Certificates",
+            "description": "Graduation diplomas and merit credentials on royal ivory sheets.",
+            "priceStarting": 149,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "certificate-printing"
+          },
+          {
+            "name": "Report Cards",
+            "description": "Folded scorecard booklets with textured paper finish.",
+            "priceStarting": 199,
+            "image": "/images/Reminder_cards.jpeg",
+            "slug": "booklet-printing"
+          }
+        ]
+      },
+      {
+        "title": "Events & Functions",
+        "products": [
+          {
+            "name": "Event Banners",
+            "description": "Durable flex backdrops for annual functions and campus festivals.",
+            "priceStarting": 99,
+            "image": "/images/placeholder-banner.svg",
+            "slug": "flex-banner-printing"
+          },
+          {
+            "name": "Invitations",
+            "description": "Elegant invite cards with metallic foil borders.",
+            "priceStarting": 25,
+            "image": "/images/placeholder-wedding.svg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Achievement Awards",
+            "description": "Laser cut acrylic medals and corporate trophies.",
+            "priceStarting": 399,
+            "image": "/images/Gold_foil_Die_cut_visiting_cards.jpeg",
+            "slug": "awards-trophies"
+          }
+        ]
+      }
+    ]
+  },
+  "events-promotions": {
+    "title": "Events & Promotions",
+    "slug": "events-promotions",
+    "tagline": "Eye-catching signages and high-impact marketing items",
+    "description": "Make your event unforgettable. From massive backdrop panels to handouts and passes, we print them with high-fidelity outputs.",
+    "bannerImage": "/images/Events&Promotions.png",
+    "sections": [
+      {
+        "title": "Event Branding",
+        "products": [
+          {
+            "name": "Standees",
+            "description": "Roll-up aluminum stands featuring retractable banner graphics.",
+            "priceStarting": 599,
+            "image": "/images/placeholder-standee.svg",
+            "slug": "acrylic-letters"
+          },
+          {
+            "name": "Flex Banners",
+            "description": "Weather-resistant PVC flex for massive event hoarding setups.",
+            "priceStarting": 99,
+            "image": "/images/placeholder-banner.svg",
+            "slug": "flex-banner-printing"
+          },
+          {
+            "name": "Backdrops",
+            "description": "Stage backdrops on premium star-flex for photography.",
+            "priceStarting": 99,
+            "image": "/images/placeholder-banner.svg",
+            "slug": "flex-banner-printing"
+          }
+        ]
+      },
+      {
+        "title": "Promotional Material",
+        "products": [
+          {
+            "name": "Flyers",
+            "description": "Local campaign leaflets and pamphlets.",
+            "priceStarting": 149,
+            "image": "/images/Flyers.jpeg",
+            "slug": "flyer-printing"
+          },
+          {
+            "name": "Brochures",
+            "description": "Product catalog folds to explain your services.",
+            "priceStarting": 249,
+            "image": "/images/Brochure.jpeg",
+            "slug": "brochure-printing"
+          },
+          {
+            "name": "Stickers",
+            "description": "Custom shapes for promotional giveaways.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-sticker.svg",
+            "slug": "sticker-printing"
+          },
+          {
+            "name": "Event Passes",
+            "description": "Secure, consecutively numbered entry cards.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "visiting-card-printing"
+          }
+        ]
+      }
+    ]
+  },
+  "ecommerce-business": {
+    "title": "E-commerce Business",
+    "slug": "ecommerce-business",
+    "tagline": "Secure product packaging and e-commerce labels",
+    "description": "Ensure customer delight upon unboxing. We deliver waterproof product labels, shipping barcodes, and branded box inserts with quick dispatch.",
+    "bannerImage": "/images/Ecommerce_Business.png",
+    "sections": [
+      {
+        "title": "Packaging Solutions",
+        "products": [
+          {
+            "name": "Shipping Labels",
+            "description": "Self-adhesive courier box labels for address panels.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          },
+          {
+            "name": "Product Labels",
+            "description": "Bottle, jar, and box labels printed on glossy paper sheets.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          },
+          {
+            "name": "Packaging Stickers",
+            "description": "Premium logo seal stickers for wrap closures.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-sticker.svg",
+            "slug": "stickers-labels-printing"
+          },
+          {
+            "name": "Thank You Cards",
+            "description": "Custom customer appreciation notes in packages.",
+            "priceStarting": 199,
+            "image": "/images/Matt_Visiting_card.jpeg",
+            "slug": "visiting-card-printing"
+          }
+        ]
+      },
+      {
+        "title": "Brand Promotion",
+        "products": [
+          {
+            "name": "Business Cards",
+            "description": "Classic cards featuring store QR codes.",
+            "priceStarting": 199,
+            "image": "/images/Matt_Visiting_card.jpeg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Inserts",
+            "description": "Promotional card tags listing discount vouchers.",
+            "priceStarting": 149,
+            "image": "/images/Flyers.jpeg",
+            "slug": "flyer-printing"
+          },
+          {
+            "name": "Promotional Flyers",
+            "description": "Discount booklets explaining cross-sells.",
+            "priceStarting": 149,
+            "image": "/images/Flyers.jpeg",
+            "slug": "flyer-printing"
+          }
+        ]
+      }
+    ]
+  },
+  "corporate-promotions": {
+    "title": "Corporate Business Promotions",
+    "slug": "corporate-promotions",
+    "tagline": "Corporate executive gifts and clean marketing assets",
+    "description": "Solidify corporate branding. Choose from premium executive notebook sets, custom polo t-shirts, laser-engraved metal pens, and document folders.",
+    "bannerImage": "/images/Corporate_Promotions.png",
+    "sections": [
+      {
+        "title": "Employee Branding",
+        "products": [
+          {
+            "name": "Corporate T-Shirts",
+            "description": "Premium cotton polo shirts embroidered with company logo.",
+            "priceStarting": 249,
+            "image": "/images/placeholder-tshirt.svg",
+            "slug": "tshirt-printing"
+          },
+          {
+            "name": "ID Cards",
+            "description": "Rigid PVC corporate badges with premium lanyards.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-idcard.svg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Welcome Kits",
+            "description": "Executive gift bundles for newly hired staff.",
+            "priceStarting": 899,
+            "image": "/images/placeholder-gift.svg",
+            "slug": "corporate-gifts"
+          }
+        ]
+      },
+      {
+        "title": "Marketing Collateral",
+        "products": [
+          {
+            "name": "Brochures",
+            "description": "Glossy corporate capability folds.",
+            "priceStarting": 249,
+            "image": "/images/Brochure.jpeg",
+            "slug": "brochure-printing"
+          },
+          {
+            "name": "Catalogues",
+            "description": "Perfect bound catalogs showcasing business products.",
+            "priceStarting": 499,
+            "image": "/images/Reminder_cards.jpeg",
+            "slug": "booklet-printing"
+          },
+          {
+            "name": "Corporate Gifts",
+            "description": "Personalized corporate gifts and awards.",
+            "priceStarting": 99,
+            "image": "/images/placeholder-gift.svg",
+            "slug": "corporate-gifts"
+          },
+          {
+            "name": "Notebooks",
+            "description": "Executive leatherette diaries with branded foil prints.",
+            "priceStarting": 149,
+            "image": "/images/Reminder_cards.jpeg",
+            "slug": "booklet-printing"
+          },
+          {
+            "name": "Pens",
+            "description": "Laser engraved metal pens for client gifting.",
+            "priceStarting": 19,
+            "image": "/images/placeholder-gift.svg",
+            "slug": "pen-printing"
+          }
+        ]
+      }
+    ]
+  },
+  "hotels-hospitality": {
+    "title": "Hotels & Hospitality",
+    "slug": "hotels-hospitality",
+    "tagline": "Premium check-in essentials and dining layouts",
+    "description": "Welcome guests with luxury. We design premium welcome tags, key card folders, door hanger signs, and custom dining menu sets.",
+    "bannerImage": "/images/Hotels&Hospitality.png",
+    "sections": [
+      {
+        "title": "Guest Experience",
+        "products": [
+          {
+            "name": "Welcome Cards",
+            "description": "Premium textured welcome letters for guest rooms.",
+            "priceStarting": 199,
+            "image": "/images/Matt_Visiting_card.jpeg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Room Signage",
+            "description": "Custom acrylic tags and direction signboards.",
+            "priceStarting": 799,
+            "image": "/images/placeholder-standee.svg",
+            "slug": "acrylic-letters"
+          },
+          {
+            "name": "Door Hangers",
+            "description": "Die-cut door tags for 'Do Not Disturb' alerts.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          }
+        ]
+      },
+      {
+        "title": "Restaurant Branding",
+        "products": [
+          {
+            "name": "Menu Cards",
+            "description": "Premium leather-bound dining menus.",
+            "priceStarting": 249,
+            "image": "/images/Brochure.jpeg",
+            "slug": "brochure-printing"
+          },
+          {
+            "name": "Table Displays",
+            "description": "Menu tents and specials display stands.",
+            "priceStarting": 99,
+            "image": "/images/placeholder-brochure.svg",
+            "slug": "brochure-printing"
+          }
+        ]
+      }
+    ]
+  },
+  "boutiques-salons": {
+    "title": "Boutiques & Salons",
+    "slug": "boutiques-salons",
+    "tagline": "Stylized price tags, bags, and loyalty cards",
+    "description": "Reflect your brand's fashion and style. Custom clothing hang tags, boutique shopping bags, appointment schedule cards, and gift vouchers.",
+    "bannerImage": "/images/Botiques&Saloons.png",
+    "sections": [
+      {
+        "title": "Branding Essentials",
+        "products": [
+          {
+            "name": "Appointment Cards",
+            "description": "Elegant grid schedule cards on textured stock.",
+            "priceStarting": 199,
+            "image": "/images/Matt_Visiting_card.jpeg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Gift Vouchers",
+            "description": "Glossy discount passes with metallic envelope packs.",
+            "priceStarting": 199,
+            "image": "/images/Matt_Visiting_card.jpeg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Product Labels",
+            "description": "Waterproof cosmetic jar labels.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          },
+          {
+            "name": "Price Tags",
+            "description": "Laser creased clothing tags with thread attachments.",
+            "priceStarting": 49,
+            "image": "/images/Labels.jpeg",
+            "slug": "stickers-labels-printing"
+          }
+        ]
+      },
+      {
+        "title": "Packaging",
+        "products": [
+          {
+            "name": "Shopping Bags",
+            "description": "Luxury shopping bags printed with boutique designs.",
+            "priceStarting": 15,
+            "image": "/images/placeholder-packaging.svg",
+            "slug": "envelope-printing"
+          },
+          {
+            "name": "Packaging Stickers",
+            "description": "Gold foil round stickers for boutique box wrapping.",
+            "priceStarting": 49,
+            "image": "/images/placeholder-sticker.svg",
+            "slug": "stickers-labels-printing"
+          }
+        ]
+      }
+    ]
+  },
+  "international-brands": {
+    "title": "International Brands",
+    "slug": "international-brands",
+    "tagline": "Royal gold foil cards, raised varnish UV, and metal engraving",
+    "description": "Exude luxury and status. Premium corporate gifting crates, metal engraved executive accessories, gold foiled invites, and raised UV cardstock.",
+    "bannerImage": "/images/International_Brands.png",
+    "sections": [
+      {
+        "title": "Premium Branding",
+        "products": [
+          {
+            "name": "Luxury Business Cards",
+            "description": "Golden metallic foils and velvety backgrounds.",
+            "priceStarting": 499,
+            "image": "/images/Gold_foil_Die_cut_visiting_cards.jpeg",
+            "slug": "visiting-card-printing"
+          },
+          {
+            "name": "Embossed Printing",
+            "description": "Raised letterheads and invitation credentials.",
+            "priceStarting": 399,
+            "image": "/images/Gold_foil_Die_cut_visiting_cards.jpeg",
+            "slug": "certificate-printing"
+          },
+          {
+            "name": "UV Printing",
+            "description": "Raised glossy varnish UV prints on rigid surfaces.",
+            "priceStarting": 149,
+            "image": "/images/Labels.jpeg",
+            "slug": "uv-printing"
+          },
+          {
+            "name": "Premium Packaging",
+            "description": "Custom rigid gift boxes with satin lining.",
+            "priceStarting": 15,
+            "image": "/images/Packaging.jpeg",
+            "slug": "doctor-files"
+          }
+        ]
+      },
+      {
+        "title": "Corporate Merchandise",
+        "products": [
+          {
+            "name": "Premium Gifts",
+            "description": "Personalized executive diaries, cups and cards.",
+            "priceStarting": 199,
+            "image": "/images/placeholder-gift.svg",
+            "slug": "corporate-gifts"
+          },
+          {
+            "name": "Executive Branding Kits",
+            "description": "All-in-one corporate metal stationery packages.",
+            "priceStarting": 899,
+            "image": "/images/placeholder-gift.svg",
+            "slug": "corporate-gifts"
+          }
+        ]
+      }
+    ]
+  }
+}

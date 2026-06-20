@@ -13,7 +13,7 @@ import { getAllProducts, getVariationBySlugs } from "@/lib/products"
 import { InstantQuoteForm } from "@/components/shared/instant-quote-form"
 
 export async function generateStaticParams() {
-  const products = getAllProducts()
+  const products = await getAllProducts()
   const params: Array<{ slug: string; variationSlug: string }> = []
   for (const p of products) {
     if (p.variations) {
@@ -34,7 +34,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string; variationSlug: string }>
 }) {
   const { slug, variationSlug } = await params
-  const result = getVariationBySlugs(slug, variationSlug)
+  const result = await getVariationBySlugs(slug, variationSlug)
   if (!result) return {}
 
   const { product, variation } = result
@@ -55,7 +55,7 @@ export default async function VariationPage({
   params: Promise<{ slug: string; variationSlug: string }>
 }) {
   const { slug, variationSlug } = await params
-  const result = getVariationBySlugs(slug, variationSlug)
+  const result = await getVariationBySlugs(slug, variationSlug)
   if (!result) notFound()
 
   const { product, variation } = result

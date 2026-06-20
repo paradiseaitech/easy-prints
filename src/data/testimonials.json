@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Rajesh Kumar",
+    "company": "Purnia Enterprises",
+    "rating": 5,
+    "text": "Best printing service in Purnia! Their visiting card quality is outstanding. Fast delivery and great design support.",
+    "image": "/images/avatar-1.svg"
+  },
+  {
+    "id": "2",
+    "name": "Anita Sharma",
+    "company": "Sharma Wedding Planners",
+    "rating": 5,
+    "text": "Ordered wedding cards for 500 guests. The foil work and finish exceeded our expectations. Highly recommend!",
+    "image": "/images/avatar-2.svg"
+  },
+  {
+    "id": "3",
+    "name": "Vikram Singh",
+    "company": "Bihari Tiffin Service",
+    "rating": 5,
+    "text": "We get all our branding materials from Easy Prints. Banners, flyers, menus — consistently excellent quality.",
+    "image": "/images/avatar-3.svg"
+  },
+  {
+    "id": "4",
+    "name": "Priya Mishra",
+    "company": "Mishra & Co.",
+    "rating": 5,
+    "text": "Corporate gifts for our clients turned out beautiful. Custom packaging made all the difference.",
+    "image": "/images/avatar-4.svg"
+  }
+]

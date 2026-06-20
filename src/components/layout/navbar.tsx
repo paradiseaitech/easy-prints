@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Search, ChevronDown, Phone, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -12,16 +12,46 @@ import { cn } from "@/lib/utils"
 
 export function Navbar() {
   const pathname = usePathname()
+  const router = useRouter()
   const isHomePage = pathname === "/"
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [isAdmin, setIsAdmin] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const res = await fetch("/admin/api/auth")
+        if (res.ok) {
+          const data = await res.json()
+          setIsAdmin(data.authenticated)
+        }
+      } catch (err) {
+        console.error("Auth check error:", err)
+      }
+    }
+    checkAuth()
+  }, [pathname])
+
+  const handleLogout = async () => {
+    try {
+      const res = await fetch("/admin/api/auth", { method: "DELETE" })
+      if (res.ok) {
+        setIsAdmin(false)
+        router.push("/")
+        router.refresh()
+      }
+    } catch (err) {
+      console.error("Logout error:", err)
+    }
+  }
 
   const isDarkNavbar = isHomePage && !isScrolled
 
@@ -124,6 +154,23 @@ export function Navbar() {
 
           {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-3">
+            {isAdmin && (
+              <>
+                <Link href="/admin/manage">
+                  <Button size="sm" className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white">
+                    Dashboard
+                  </Button>
+                </Link>
+                <Button 
+                  size="sm" 
+                  variant="outline" 
+                  onClick={handleLogout}
+                  className={cn(isDarkNavbar ? "border-white/20 text-white hover:bg-white hover:text-black" : "border-red-200 text-red-500 hover:bg-red-50")}
+                >
+                  Logout
+                </Button>
+              </>
+            )}
             <button className={cn("p-2 transition-colors", isDarkNavbar ? "text-white/80 hover:text-white" : "text-gray-500 hover:text-[#FF6B35]")}>
               <Search className="w-5 h-5" />
             </button>
@@ -235,6 +282,25 @@ export function Navbar() {
                 </div>
 
                 <div className="mt-6 space-y-3">
+                  {isAdmin && (
+                    <>
+                      <Link href="/admin/manage" className="block w-full" onClick={() => setIsMobileOpen(false)}>
+                        <Button className="w-full bg-[#FF6B35] text-white hover:bg-[#E55A2B] font-medium py-3 rounded-xl">
+                          Admin Dashboard
+                        </Button>
+                      </Link>
+                      <Button 
+                        variant="outline" 
+                        onClick={() => {
+                          handleLogout()
+                          setIsMobileOpen(false)
+                        }}
+                        className="w-full border-red-200 text-red-500 hover:bg-red-50 font-medium py-3 rounded-xl"
+                      >
+                        Logout
+                      </Button>
+                    </>
+                  )}
                   <a
                     href={`https://wa.me/${SITE.contact.whatsapp}?text=Hello%2C%20I%20want%20printing%20quotation%20from%20Easy%20Prints.`}
                     target="_blank"

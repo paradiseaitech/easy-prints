@@ -1,27 +1,33 @@
 import { HeroSection } from "@/components/sections/hero"
-import { CategoryShowcase } from "@/components/sections/categories"
 import { ReelsSection } from "@/components/sections/reels"
-import { TrendingProducts } from "@/components/sections/trending"
+import { TopBusinessNeeds } from "@/components/sections/top-business-needs"
+import { PopularCategories } from "@/components/sections/popular-categories"
+import { BestSellers } from "@/components/sections/best-sellers"
 import { WhyUs } from "@/components/sections/why-us"
 import { SocialProof } from "@/components/sections/social-proof"
 import { FAQSection } from "@/components/sections/faq-section"
 import { CTASection } from "@/components/sections/cta-section"
 import { StructuredData } from "@/components/seo/structured-data"
 import { localBusinessSchema } from "@/lib/schema/local-business"
-import { getAllProducts } from "@/lib/products"
+import { getAllProducts, getCategories, getBestSellers } from "@/lib/products"
+import { getAllTestimonials } from "@/lib/testimonials"
 
-export default function HomePage() {
-  const products = getAllProducts()
+export default async function HomePage() {
+  const allProducts = await getAllProducts()
+  const categories = await getCategories()
+  const bestSellers = await getBestSellers()
+  const testimonials = await getAllTestimonials()
 
   return (
     <>
       <StructuredData data={localBusinessSchema()} />
-      <HeroSection />
-      <CategoryShowcase products={products} />
+      <HeroSection products={allProducts} />
       <ReelsSection />
-      <TrendingProducts products={products} />
+      <TopBusinessNeeds />
+      <PopularCategories categories={categories} />
+      <BestSellers products={bestSellers} />
       <WhyUs />
-      <SocialProof />
+      <SocialProof testimonials={testimonials} />
       <FAQSection />
       <CTASection />
     </>

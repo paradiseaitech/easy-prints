@@ -1,11 +1,14 @@
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
+import { getCategories } from "@/lib/products"
 import { ProductForm } from "../product-form"
 
 export default async function AddProductPage() {
   const cookieStore = await cookies()
   const authed = cookieStore.get("admin_auth")?.value === "true"
   if (!authed) redirect("/admin/manage/login")
+
+  const categories = await getCategories()
 
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
@@ -17,11 +20,11 @@ export default async function AddProductPage() {
           >
             ← Back to Dashboard
           </a>
-          <h1 className="text-2xl font-bold text-[#1A1A2E] mt-2">Add New Service</h1>
-          <p className="text-sm text-gray-500">Create a new printing service</p>
+          <h1 className="text-2xl font-bold text-[#1A1A2E] mt-2 font-heading">Add New Product</h1>
+          <p className="text-sm text-gray-500">Create a new printing service catalog entry</p>
         </div>
 
-        <ProductForm />
+        <ProductForm categories={categories} />
       </div>
     </div>
   )

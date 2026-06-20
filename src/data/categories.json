@@ -1,0 +1,34 @@
+[
+  {
+    "id": "digital-printing",
+    "name": "Digital Printing",
+    "slug": "digital-printing",
+    "icon": "Printer",
+    "image": "/images/Matt_Visiting_card.jpeg",
+    "description": "High-quality print solutions for business cards, flyers, brochures, certificates, and stickers."
+  },
+  {
+    "id": "offset-printing",
+    "name": "Offset Printing",
+    "slug": "offset-printing",
+    "icon": "Layers",
+    "image": "/images/Brochure.jpeg",
+    "description": "High-volume, cost-effective printing for booklets, bill books, envelopes, and doctor files."
+  },
+  {
+    "id": "flex-uv-printing",
+    "name": "Flex & UV Printing",
+    "slug": "flex-uv-printing",
+    "icon": "Image",
+    "image": "/images/Labels.jpeg",
+    "description": "Large format flex banners, premium UV printing, and custom vinyl banners."
+  },
+  {
+    "id": "signage-3d-letters",
+    "name": "Signage & 3D Letters",
+    "slug": "signage-3d-letters",
+    "icon": "Tv",
+    "image": "/images/Gold_foil_Die_cut_visiting_cards.jpeg",
+    "description": "Custom acrylic letters, LED sign boards, ACP boards, and stainless steel letters."
+  }
+]

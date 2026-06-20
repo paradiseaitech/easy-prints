@@ -1,6 +1,7 @@
 import { cookies } from "next/headers"
 import { redirect, notFound } from "next/navigation"
 import { getProduct } from "@/lib/admin-actions"
+import { getCategories } from "@/lib/products"
 import { ProductForm } from "../../product-form"
 
 export default async function EditProductPage({
@@ -16,6 +17,8 @@ export default async function EditProductPage({
   const product = await getProduct(id)
   if (!product) notFound()
 
+  const categories = await getCategories()
+
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8">
@@ -26,11 +29,11 @@ export default async function EditProductPage({
           >
             ← Back to Dashboard
           </a>
-          <h1 className="text-2xl font-bold text-[#1A1A2E] mt-2">Edit Service</h1>
-          <p className="text-sm text-gray-500">Update &quot;{product.name}&quot;</p>
+          <h1 className="text-2xl font-bold text-[#1A1A2E] mt-2 font-heading">Edit Product</h1>
+          <p className="text-sm text-gray-500">Update details for &quot;{product.name}&quot;</p>
         </div>
 
-        <ProductForm product={product} />
+        <ProductForm product={product} categories={categories} />
       </div>
     </div>
   )

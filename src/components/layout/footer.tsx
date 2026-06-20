@@ -1,18 +1,13 @@
 import Link from "next/link"
 import Image from "next/image"
-import { SITE, PRODUCTS } from "@/lib/constants"
+import { SITE } from "@/lib/constants"
+import { getAllProducts, getCategories } from "@/lib/products"
 import { MessageCircle, Phone, Mail, MapPin, Camera, Video } from "lucide-react"
 
-const CATEGORIES = [
-  { label: "Apparel", href: "/category/apparel" },
-  { label: "Stationery", href: "/category/stationery" },
-  { label: "Signage", href: "/category/signage" },
-  { label: "Packaging", href: "/category/packaging" },
-  { label: "Gifts", href: "/category/gifts" },
-  { label: "Wedding", href: "/category/wedding" },
-]
+export async function Footer() {
+  const products = (await getAllProducts()).slice(0, 8)
+  const categories = await getCategories()
 
-export function Footer() {
   return (
     <footer className="bg-[#1A1A2E] text-white">
       {/* Main Footer */}
@@ -67,7 +62,7 @@ export function Footer() {
               Services
             </h3>
             <ul className="space-y-3">
-              {PRODUCTS.slice(0, 8).map((product) => (
+              {products.map((product) => (
                 <li key={product.id}>
                   <Link
                     href={`/${product.slug}`}
@@ -86,13 +81,13 @@ export function Footer() {
               Categories
             </h3>
             <ul className="space-y-3">
-              {CATEGORIES.map((cat) => (
-                <li key={cat.label}>
+              {categories.map((cat) => (
+                <li key={cat.id}>
                   <Link
-                    href={cat.href}
+                    href={`/category/${cat.slug}`}
                     className="text-sm text-gray-400 hover:text-[#FF6B35] transition-colors"
                   >
-                    {cat.label}
+                    {cat.name}
                   </Link>
                 </li>
               ))}
@@ -162,6 +157,9 @@ export function Footer() {
             >
               Catalog
             </a>
+            <Link href="/admin" className="text-sm text-gray-500 hover:text-white transition-colors">
+              Admin
+            </Link>
           </div>
         </div>
       </div>
