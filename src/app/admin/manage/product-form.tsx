@@ -1,8 +1,9 @@
 "use client"
 
 import { useRef, useState } from "react"
+import { useRouter } from "next/navigation"
 import { addProduct, updateProduct } from "@/lib/admin-actions"
-import { ImagePlus, Trash2, Plus, Sparkles } from "lucide-react"
+import { ImagePlus, Trash2, Plus, Sparkles, CheckCircle2, AlertCircle, Loader2 } from "lucide-react"
 import type { ProductData, CategoryData, ProductVariation } from "@/lib/products"
 import { Button } from "@/components/ui/button"
 import { compressImage, fileToBase64 } from "@/lib/compress-image"
@@ -14,8 +15,11 @@ interface Props {
 
 export function ProductForm({ product, categories }: Props) {
   const isEditing = !!product
+  const router = useRouter()
   const [preview, setPreview] = useState(product?.image || "")
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const [loading, setLoading] = useState(false)
+  const [toast, setToast] = useState<{ show: boolean; type: "success" | "error"; message: string } | null>(null)
 
   // Product Variations State
   const [variations, setVariations] = useState<ProductVariation[]>(product?.variations || [])
@@ -119,6 +123,52 @@ export function ProductForm({ product, categories }: Props) {
     setVariations((prev) => prev.filter((v) => v.id !== id))
   }
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setLoading(true)
+    setToast(null)
+
+    const formData = new FormData(e.currentTarget)
+
+    try {
+      let res
+      if (isEditing) {
+        res = await updateProduct(product!.id, formData)
+      } else {
+        res = await addProduct(formData)
+      }
+
+      if (res && res.success) {
+        setToast({
+          show: true,
+          type: "success",
+          message: isEditing
+            ? "Product updated successfully! Redirecting..."
+            : "Product created successfully! Redirecting..."
+        })
+        setTimeout(() => {
+          router.push("/admin/manage")
+          router.refresh()
+        }, 1500)
+      } else {
+        setToast({
+          show: true,
+          type: "error",
+          message: "Failed to save product. Please try again."
+        })
+        setLoading(false)
+      }
+    } catch (err) {
+      console.error("Error submitting product:", err)
+      setToast({
+        show: true,
+        type: "error",
+        message: err instanceof Error ? err.message : "An unexpected error occurred."
+      })
+      setLoading(false)
+    }
+  }
+
   const sizesString = product?.sizes?.join(", ") || ""
   const materialsString = product?.materials?.join(", ") || ""
   const specsString = product?.specs?.map(s => `${s.key}: ${s.value}`).join("\n") || ""
@@ -126,7 +176,7 @@ export function ProductForm({ product, categories }: Props) {
   return (
     <div className="bg-white rounded-3xl border border-gray-100 shadow-xl p-8 space-y-8">
       <form
-        action={isEditing ? updateProduct.bind(null, product!.id) : addProduct}
+        onSubmit={handleSubmit}
         className="space-y-6"
       >
         {/* Hidden variations payload */}
@@ -462,10 +512,11 @@ export function ProductForm({ product, categories }: Props) {
         <div className="flex gap-4 pt-6 border-t border-gray-100">
           <Button
             type="submit"
-            disabled={compressing}
-            className="flex-1 h-12 bg-[#FF6B35] text-white hover:bg-[#E55A2B] font-bold rounded-xl disabled:opacity-50"
+            disabled={compressing || loading}
+            className="flex-1 h-12 bg-[#FF6B35] text-white hover:bg-[#E55A2B] font-bold rounded-xl disabled:opacity-50 flex items-center justify-center gap-2"
           >
-            {compressing ? "Compressing..." : isEditing ? "Update Product" : "Create Product"}
+            {loading && <Loader2 className="w-4 h-4 animate-spin" />}
+            {loading ? (isEditing ? "Updating..." : "Creating...") : compressing ? "Compressing..." : isEditing ? "Update Product" : "Create Product"}
           </Button>
           <a
             href="/admin/manage"
@@ -475,6 +526,36 @@ export function ProductForm({ product, categories }: Props) {
           </a>
         </div>
       </form>
+
+      {/* Toast Notification */}
+      {toast && toast.show && (
+        <div className="fixed bottom-5 right-5 z-50 animate-in fade-in slide-in-from-bottom-5 duration-300">
+          <div className={`flex items-center gap-3 px-5 py-4 rounded-2xl shadow-xl backdrop-blur-md border ${
+            toast.type === "success" 
+              ? "bg-white/95 border-emerald-100 text-emerald-800" 
+              : "bg-white/95 border-rose-100 text-rose-800"
+          }`}>
+            {toast.type === "success" ? (
+              <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+            ) : (
+              <AlertCircle className="w-5 h-5 text-rose-500 shrink-0" />
+            )}
+            <div className="flex-1">
+              <p className="text-xs font-black uppercase tracking-wider text-gray-400">
+                {toast.type === "success" ? "Success" : "Error"}
+              </p>
+              <p className="text-xs font-bold mt-0.5">{toast.message}</p>
+            </div>
+            <button 
+              type="button"
+              onClick={() => setToast(null)}
+              className="text-gray-400 hover:text-gray-600 font-bold text-xs pl-2"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

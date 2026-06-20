@@ -17,7 +17,8 @@ import {
 } from "@/lib/admin-actions"
 import { 
   Plus, Pencil, Trash2, ExternalLink, Package, 
-  Layers, MessageCircle, Star, ImagePlus, CheckCircle, Sparkles
+  Layers, MessageCircle, Star, ImagePlus, CheckCircle, Sparkles,
+  AlertCircle, Loader2
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import type { ProductData, CategoryData } from "@/lib/products"
@@ -36,6 +37,7 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
   const [activeTab, setActiveTab] = useState<"products" | "categories" | "testimonials" | "businessNeeds">("products")
   const [deleting, setDeleting] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const [toast, setToast] = useState<{ show: boolean; type: "success" | "error"; message: string } | null>(null)
   const router = useRouter()
 
   // Inline Category Form State
@@ -158,14 +160,44 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
     }
   }
 
-  const handleToggleBestSeller = async (id: string) => {
-    await toggleBestSeller(id)
-    router.refresh()
+  const handleToggleBestSeller = async (id: string, name: string) => {
+    setToast(null)
+    try {
+      await toggleBestSeller(id)
+      setToast({
+        show: true,
+        type: "success",
+        message: `Toggled Best Seller status for "${name}"`
+      })
+      router.refresh()
+    } catch (err) {
+      console.error(err)
+      setToast({
+        show: true,
+        type: "error",
+        message: err instanceof Error ? err.message : "Failed to update Best Seller status."
+      })
+    }
   }
 
-  const handleToggleFeatured = async (id: string) => {
-    await toggleFeatured(id)
-    router.refresh()
+  const handleToggleFeatured = async (id: string, name: string) => {
+    setToast(null)
+    try {
+      await toggleFeatured(id)
+      setToast({
+        show: true,
+        type: "success",
+        message: `Toggled Featured status for "${name}"`
+      })
+      router.refresh()
+    } catch (err) {
+      console.error(err)
+      setToast({
+        show: true,
+        type: "error",
+        message: err instanceof Error ? err.message : "Failed to update Featured status."
+      })
+    }
   }
 
   return (
@@ -287,7 +319,7 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
                       <td className="px-6 py-4">
                         <div className="flex flex-wrap gap-2">
                           <button
-                            onClick={() => handleToggleBestSeller(product.id)}
+                            onClick={() => handleToggleBestSeller(product.id, product.name)}
                             className={`px-2.5 py-1 rounded-lg text-[10px] font-bold border transition-colors ${
                               product.isBestSeller 
                                 ? "bg-orange-50 border-orange-200 text-[#FF6B35]" 
@@ -297,7 +329,7 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
                             Best Seller
                           </button>
                           <button
-                            onClick={() => handleToggleFeatured(product.id)}
+                            onClick={() => handleToggleFeatured(product.id, product.name)}
                             className={`px-2.5 py-1 rounded-lg text-[10px] font-bold border transition-colors ${
                               product.isFeatured 
                                 ? "bg-blue-50 border-blue-200 text-blue-600" 
@@ -325,21 +357,50 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
                           <Link href={`/admin/manage/edit/${product.id}`} className="p-2 text-blue-500 hover:text-blue-600" title="Edit">
                             <Pencil className="w-4 h-4" />
                           </Link>
-                          <form
-                            action={async () => {
-                              setDeleting(product.id)
-                              await deleteProduct(product.id)
-                            }}
-                            onSubmit={(e) => {
-                              if (!confirm(`Delete "${product.name}"? This cannot be undone.`)) {
-                                e.preventDefault()
+                          <button
+                            type="button"
+                            disabled={deleting === product.id}
+                            onClick={async () => {
+                              if (confirm(`Delete "${product.name}"? This cannot be undone.`)) {
+                                setDeleting(product.id)
+                                setToast(null)
+                                try {
+                                  const res = await deleteProduct(product.id)
+                                  if (res && res.success) {
+                                    setToast({
+                                      show: true,
+                                      type: "success",
+                                      message: `Product "${product.name}" deleted successfully!`
+                                    })
+                                    router.refresh()
+                                  } else {
+                                    setToast({
+                                      show: true,
+                                      type: "error",
+                                      message: "Failed to delete product."
+                                    })
+                                  }
+                                } catch (err) {
+                                  console.error("Error deleting product:", err)
+                                  setToast({
+                                    show: true,
+                                    type: "error",
+                                    message: err instanceof Error ? err.message : "Failed to delete product."
+                                  })
+                                } finally {
+                                  setDeleting(null)
+                                }
                               }
                             }}
+                            className="p-2 text-red-400 hover:text-red-600 disabled:opacity-50"
+                            title="Delete"
                           >
-                            <button type="submit" disabled={deleting === product.id} className="p-2 text-red-400 hover:text-red-600">
+                            {deleting === product.id ? (
+                              <Loader2 className="w-4 h-4 animate-spin text-red-500" />
+                            ) : (
                               <Trash2 className="w-4 h-4" />
-                            </button>
-                          </form>
+                            )}
+                          </button>
                         </div>
                       </td>
                     </tr>
@@ -392,20 +453,44 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
                 </div>
                 <form
                   key={editingCategory ? editingCategory.id : "new-category"}
-                  action={async (formData) => {
+                  onSubmit={async (e) => {
+                    e.preventDefault()
                     setLoading(true)
+                    setToast(null)
+                    const formData = new FormData(e.currentTarget)
                     try {
+                      let res
                       if (editingCategory) {
-                        await updateCategory(editingCategory.id, formData)
+                        res = await updateCategory(editingCategory.id, formData)
                       } else {
-                        await addCategory(formData)
+                        res = await addCategory(formData)
                       }
-                      setShowCatForm(false)
-                      setEditingCategory(null)
-                      setCatImagePreview("")
-                      router.refresh()
+                      
+                      if (res && res.success) {
+                        setToast({
+                          show: true,
+                          type: "success",
+                          message: editingCategory
+                            ? `Category "${editingCategory.name}" updated successfully!`
+                            : `Category created successfully!`
+                        })
+                        setShowCatForm(false)
+                        setEditingCategory(null)
+                        setCatImagePreview("")
+                        router.refresh()
+                      } else {
+                        setToast({
+                          show: true,
+                          type: "error",
+                          message: "Failed to save category."
+                        })
+                      }
                     } catch (err) {
-                      alert(err instanceof Error ? err.message : "An error occurred")
+                      setToast({
+                        show: true,
+                        type: "error",
+                        message: err instanceof Error ? err.message : "An error occurred"
+                      })
                     } finally {
                       setLoading(false)
                     }
@@ -526,21 +611,42 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
                             >
                               <Pencil className="w-4 h-4" />
                             </button>
-                            <form
-                              action={async () => {
-                                await deleteCategory(cat.id)
-                                router.refresh()
-                              }}
-                              onSubmit={(e) => {
-                                if (!confirm(`Delete category "${cat.name}"? Products under it will not be deleted but won't belong to any category.`)) {
-                                  e.preventDefault()
+                            <button
+                              type="button"
+                              onClick={async () => {
+                                if (confirm(`Delete category "${cat.name}"? Products under it will not be deleted but won't belong to any category.`)) {
+                                  setToast(null)
+                                  try {
+                                    const res = await deleteCategory(cat.id)
+                                    if (res && res.success) {
+                                      setToast({
+                                        show: true,
+                                        type: "success",
+                                        message: `Category "${cat.name}" deleted successfully!`
+                                      })
+                                      router.refresh()
+                                    } else {
+                                      setToast({
+                                        show: true,
+                                        type: "error",
+                                        message: "Failed to delete category."
+                                      })
+                                    }
+                                  } catch (err) {
+                                    console.error(err)
+                                    setToast({
+                                      show: true,
+                                      type: "error",
+                                      message: err instanceof Error ? err.message : "Failed to delete category."
+                                    })
+                                  }
                                 }
                               }}
+                              className="p-2 text-red-400 hover:text-red-600"
+                              title="Delete Category"
                             >
-                              <button type="submit" className="p-2 text-red-400 hover:text-red-600" title="Delete Category">
-                                <Trash2 className="w-4 h-4" />
-                              </button>
-                            </form>
+                              <Trash2 className="w-4 h-4" />
+                            </button>
                           </div>
                         </td>
                       </tr>
@@ -570,15 +676,35 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
             {showTestForm && (
               <div className="bg-white rounded-3xl border border-gray-100 shadow-xl p-6 max-w-2xl">
                 <form
-                  action={async (formData) => {
+                  onSubmit={async (e) => {
+                    e.preventDefault()
                     setLoading(true)
+                    setToast(null)
+                    const formData = new FormData(e.currentTarget)
                     try {
-                      await addTestimonial(formData)
-                      setShowTestForm(false)
-                      setTestImagePreview("")
-                      router.refresh()
+                      const res = await addTestimonial(formData)
+                      if (res && res.success) {
+                        setToast({
+                          show: true,
+                          type: "success",
+                          message: "Testimonial added successfully!"
+                        })
+                        setShowTestForm(false)
+                        setTestImagePreview("")
+                        router.refresh()
+                      } else {
+                        setToast({
+                          show: true,
+                          type: "error",
+                          message: "Failed to add testimonial."
+                        })
+                      }
                     } catch (err) {
-                      alert(err instanceof Error ? err.message : "An error occurred")
+                      setToast({
+                        show: true,
+                        type: "error",
+                        message: err instanceof Error ? err.message : "An error occurred"
+                      })
                     } finally {
                       setLoading(false)
                     }
@@ -649,16 +775,42 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
                           <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                         ))}
                       </div>
-                      <form
-                        action={async () => {
-                          await deleteTestimonial(test.id)
-                          router.refresh()
+                      <button
+                        type="button"
+                        onClick={async () => {
+                          if (confirm(`Delete review from "${test.name}"?`)) {
+                            setToast(null)
+                            try {
+                              const res = await deleteTestimonial(test.id)
+                              if (res && res.success) {
+                                setToast({
+                                  show: true,
+                                  type: "success",
+                                  message: `Review from "${test.name}" deleted successfully!`
+                                })
+                                router.refresh()
+                              } else {
+                                setToast({
+                                  show: true,
+                                  type: "error",
+                                  message: "Failed to delete review."
+                                })
+                              }
+                            } catch (err) {
+                              console.error(err)
+                              setToast({
+                                show: true,
+                                type: "error",
+                                message: err instanceof Error ? err.message : "Failed to delete review."
+                              })
+                            }
+                          }
                         }}
+                        className="text-red-400 hover:text-red-600 p-1"
+                        title="Delete Review"
                       >
-                        <button type="submit" className="text-red-400 hover:text-red-600 p-1" title="Delete Review">
-                          <Trash2 className="w-4 h-4" />
-                        </button>
-                      </form>
+                        <Trash2 className="w-4 h-4" />
+                      </button>
                     </div>
                     <p className="text-sm text-gray-600 leading-relaxed italic mb-6">
                       &ldquo;{test.text}&rdquo;
@@ -715,16 +867,36 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
 
                 <form
                   key={editingNeed.slug}
-                  action={async (formData) => {
+                  onSubmit={async (e) => {
+                    e.preventDefault()
                     setLoading(true)
+                    setToast(null)
+                    const formData = new FormData(e.currentTarget)
                     try {
-                      await updateBusinessNeed(editingNeed.slug, formData)
-                      setEditingNeed(null)
-                      setNeedBannerPreview("")
-                      setNeedSections([])
-                      router.refresh()
+                      const res = await updateBusinessNeed(editingNeed.slug, formData)
+                      if (res && res.success) {
+                        setToast({
+                          show: true,
+                          type: "success",
+                          message: `Business Need landing page "${editingNeed.title}" updated successfully!`
+                        })
+                        setEditingNeed(null)
+                        setNeedBannerPreview("")
+                        setNeedSections([])
+                        router.refresh()
+                      } else {
+                        setToast({
+                          show: true,
+                          type: "error",
+                          message: "Failed to update business need landing page."
+                        })
+                      }
                     } catch (err) {
-                      alert(err instanceof Error ? err.message : "Failed to update business need")
+                      setToast({
+                        show: true,
+                        type: "error",
+                        message: err instanceof Error ? err.message : "Failed to update business need"
+                      })
                     } finally {
                       setLoading(false)
                     }
@@ -969,7 +1141,11 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
                                     disabled={compressingNp}
                                     onClick={() => {
                                       if (!newNpName || !newNpPrice || !newNpSlug) {
-                                        alert("Name, Price, and Link Slug are required.")
+                                        setToast({
+                                          show: true,
+                                          type: "error",
+                                          message: "Name, Price, and Link Slug are required."
+                                        })
                                         return
                                       }
                                       const newProduct = {
@@ -1095,6 +1271,36 @@ export function AdminDashboard({ products, categories, testimonials, businessNee
           </div>
         )}
       </div>
+
+      {/* Toast Notification */}
+      {toast && toast.show && (
+        <div className="fixed bottom-5 right-5 z-50 animate-in fade-in slide-in-from-bottom-5 duration-300">
+          <div className={`flex items-center gap-3 px-5 py-4 rounded-2xl shadow-xl backdrop-blur-md border ${
+            toast.type === "success" 
+              ? "bg-white/95 border-emerald-100 text-emerald-800" 
+              : "bg-white/95 border-rose-100 text-rose-800"
+          }`}>
+            {toast.type === "success" ? (
+              <CheckCircle className="w-5 h-5 text-emerald-500 shrink-0" />
+            ) : (
+              <AlertCircle className="w-5 h-5 text-rose-500 shrink-0" />
+            )}
+            <div className="flex-1">
+              <p className="text-xs font-black uppercase tracking-wider text-gray-400">
+                {toast.type === "success" ? "Success" : "Error"}
+              </p>
+              <p className="text-xs font-bold mt-0.5">{toast.message}</p>
+            </div>
+            <button 
+              type="button"
+              onClick={() => setToast(null)}
+              className="text-gray-400 hover:text-gray-600 font-bold text-xs pl-2"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

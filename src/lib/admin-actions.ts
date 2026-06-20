@@ -193,7 +193,7 @@ export async function addProduct(formData: FormData) {
   revalidatePath("/admin/manage")
   revalidatePath(`/${slug}`)
   revalidatePath(`/category/${category}`)
-  redirect("/admin/manage")
+  return { success: true, slug }
 }
 
 export async function updateProduct(id: string, formData: FormData) {
@@ -299,7 +299,7 @@ export async function updateProduct(id: string, formData: FormData) {
   revalidatePath(`/${currentProduct.slug}`)
   revalidatePath(`/category/${category}`)
   revalidatePath(`/category/${oldCategory}`)
-  redirect("/admin/manage")
+  return { success: true, slug }
 }
 
 export async function deleteProduct(id: string) {
@@ -317,9 +317,11 @@ export async function deleteProduct(id: string) {
 
   revalidatePath("/")
   revalidatePath("/admin/manage")
-  revalidatePath(`/${currentProduct.slug}`)
-  revalidatePath(`/category/${currentProduct.category}`)
-  redirect("/admin/manage")
+  if (currentProduct) {
+    revalidatePath(`/${currentProduct.slug}`)
+    revalidatePath(`/category/${currentProduct.category}`)
+  }
+  return { success: true }
 }
 
 export async function toggleBestSeller(id: string) {
@@ -396,7 +398,7 @@ export async function addCategory(formData: FormData) {
 
   revalidatePath("/")
   revalidatePath("/admin/manage")
-  redirect("/admin/manage")
+  return { success: true }
 }
 
 export async function updateCategory(id: string, formData: FormData) {
@@ -446,7 +448,7 @@ export async function updateCategory(id: string, formData: FormData) {
   revalidatePath("/admin/manage")
   revalidatePath(`/category/${oldSlug}`)
   revalidatePath(`/category/${slug}`)
-  redirect("/admin/manage")
+  return { success: true }
 }
 
 export async function deleteCategory(id: string) {
@@ -470,7 +472,7 @@ export async function deleteCategory(id: string) {
   if (currentCategory) {
     revalidatePath(`/category/${currentCategory.slug}`)
   }
-  redirect("/admin/manage")
+  return { success: true }
 }
 
 // Testimonial Actions
@@ -505,7 +507,7 @@ export async function addTestimonial(formData: FormData) {
 
   revalidatePath("/")
   revalidatePath("/admin/manage")
-  redirect("/admin/manage")
+  return { success: true }
 }
 
 export async function deleteTestimonial(id: string) {
@@ -520,7 +522,7 @@ export async function deleteTestimonial(id: string) {
 
   revalidatePath("/")
   revalidatePath("/admin/manage")
-  redirect("/admin/manage")
+  return { success: true }
 }
 
 // Business Need Actions
@@ -577,5 +579,5 @@ export async function updateBusinessNeed(slug: string, formData: FormData) {
   revalidatePath("/")
   revalidatePath("/admin/manage")
   revalidatePath(`/business-needs/${slug}`)
-  redirect("/admin/manage")
+  return { success: true }
 }
