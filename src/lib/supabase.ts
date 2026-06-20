@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js"
+// Trigger redeployment with clean cache namespace
 
 // Use placeholder credentials during build time if environment variables are not yet loaded
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder-project-id.supabase.co"
